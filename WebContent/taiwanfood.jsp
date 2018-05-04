@@ -141,7 +141,23 @@ Released   : 20110411
         <div id="content">
         <div style="font-size:xx-large">台式料理</div>
 			<div class="post">
-				<h2 class="title"><a href="#">台北市</a></h2>
+				<h2 class="title"><a href="#">台北市 
+				<select id=type name="type" onchange="updateData(this)">
+      <option value="">請選擇</option>
+      <option value="1">萬華區</option>
+      <option value="0">中正區</option>
+      <option value="2">北投區</option>
+      <option value="3">士林區</option>
+      <option value="4">內湖區</option>
+      <option value="5">中山區</option>
+      <option value="6">松山區</option>
+      <option value="7">大同區</option>
+      <option value="8">大安區</option>
+      <option value="9">信義區</option>
+      <option value="10">南港區</option>
+      <option value="10">文山區</option>
+    </select>
+				</a></h2>
 						
 			  <div class="entry">
                <table width="431" height="256">
@@ -173,7 +189,41 @@ Released   : 20110411
 			  </div>
 			</div>
 		  <div class="post">
-				<h2 class="title"><a href="#">新北市</a></h2>
+				<h2 class="title"><a href="#">新北市
+				<select id=type name="type" onchange="updateData(this)">
+      <option value="">請選擇</option>
+      <option value="1">板橋區</option>
+      <option value="0">新莊區</option>
+      <option value="2">三重區</option>
+      <option value="3">泰山區</option>
+      <option value="4">五股區</option>
+      <option value="5">蘆洲區</option>
+      <option value="6">林口區</option>
+      <option value="7">八里區</option>
+      <option value="8">淡水區</option>
+      <option value="9">三芝區</option>
+      <option value="10">石門區</option>
+      <option value="11">金山區</option>
+      <option value="12">萬里區</option>
+      <option value="13">汐止區</option>
+      <option value="14">平溪區</option>
+      <option value="15">瑞芳區</option>
+      <option value="16">貢寮區</option>
+      <option value="17">雙溪區</option>
+      <option value="18">坪林區</option>
+      <option value="19">石碇區</option>
+      <option value="20">烏來區</option>
+      <option value="21">新店區</option>
+      <option value="22">深坑區</option>
+      <option value="23">三峽區</option>
+      <option value="24">土城區</option>
+      <option value="25">中和區</option>
+      <option value="26">永和區</option>
+      <option value="27">樹林區</option>
+      <option value="28">鶯歌區</option>
+ 
+    </select>
+				</a></h2>
 				
 				
 				
