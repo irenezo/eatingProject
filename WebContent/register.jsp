@@ -53,20 +53,17 @@ Released   : 20110411
 				<h2 class="title"><a href="#">註冊</a></h2>
 						
 			  <div class="entry" style="background-color:#FFDDAA">
-               <table width="321" height="299">
-                <tr>
-			   <input type= "text" name="account"  pattern="[A-Za-z0-9]{1,10}" maxlength="10" required>不可超過10碼<br>
-密碼：<input type="password" name="psw" required><br>
-			   <tr>
- 			   <td width="63" height="80">姓名：</td>
-               <td width="246"> <div style="height:20px;background-color:
-#FFFFFF" ></div></td>
-			   <tr>
-		       <td width="63" height="80">Email：</td>
-               <td width="246"> <div style="height:20px;background-color:
-#FFFFFF" ></div></td>
-               
-                </table> 
+              
+                <form action="register_process.jsp" method="get">
+<br>         
+帳號：&nbsp&nbsp&nbsp<input type= "text" name="account"  pattern="[A-Za-z0-9]{1,10}" maxlength="10" required>不可超過10碼<br><br>
+密碼：&nbsp&nbsp&nbsp<input type="password" name="psw" pattern="[A-Za-z0-9]{1,12}" maxlength="12" required>最多12碼<br><br>
+姓名：&nbsp&nbsp&nbsp<input type="text" name="name" required><br><br>			   
+E-mail：<input type="email" name="email" required>XXX@XXX
+<br><br>
+<input type="submit" value="送出">
+<input type="reset" value="重填">
+ 			</form>
                   
 					
 			  </div>
