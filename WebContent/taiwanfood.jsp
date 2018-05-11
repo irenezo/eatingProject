@@ -156,7 +156,6 @@ Released   : 20110411
       <option value="9">信義區</option>
       <option value="10">南港區</option>
       <option value="10">文山區</option>
-      <option value="11">test</option>
     </select>
 				</a></h2>
 						
