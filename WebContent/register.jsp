@@ -61,7 +61,7 @@ Released   : 20110411
 姓名：&nbsp&nbsp&nbsp<input type="text" name="name" required><br><br>			   
 E-mail：<input type="email" name="email" required>XXX@XXX
 <br><br>
-<input type="submit" value="送出">
+&nbsp&nbsp&nbsp<input type="submit" value="送出">
 <input type="reset" value="重填">
  			</form>
                   
