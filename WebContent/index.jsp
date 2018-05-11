@@ -87,52 +87,52 @@ Released   : 20110411
 				</li>
 				<div id="category" style="font-size:xx-large" align="center" ba><b>分類</b></div>
                 <br />
-                <li>
-					<h2>台式料理</h2>
+                 <li>
+					<h2 align="center"><a href="taiwanesefood.jsp">台式料理</a></h2>
 				</li>
                 
 				<li>
-					<h2>西式料理</h2>
+					<h2 align="center"><a href="westernfood.jsp">西式料理</a></h2>
 				</li>
                 
 				<li>
-					<h2>日式料理</h2>
+					<h2 align="center"><a href="japanesefood.jsp">日式料理</a></h2>
 				</li>
                 
 				<li>
-					<h2>韓式料理</h2>
+					<h2 align="center"><a href="koreanfood.jsp">韓式料理</a></h2>
 				</li>
                 
                 <li>
-					<h2>美式料理</h2>
+					<h2 align="center"><a href="americanfood.jsp">美式料理</a></h2>
 				</li>
                 
                 <li>
-					<h2>義式料理</h2>
+					<h2 align="center"><a href="italianfood.jsp">義式料理</a></h2>
 				</li>
                 
                 <li>
-					<h2>港式料理</h2>
+					<h2 align="center"><a href="HKfood.jsp">港式料理</a></h2>
 				</li>
                 
                 <li>
-					<h2>早午餐</h2>
+					<h2 align="center"><a href="brunch.jsp">早午餐</a></h2>
 				</li>
                 
                 <li>
-					<h2>火鍋類</h2>
+					<h2 align="center"><a href="hotpot.jsp">火鍋類</a></h2>
 				</li>
                 
                 <li>
-					<h2>餐盒訂購</h2>
+					<h2 align="center"><a href="mealbox.jsp">餐盒訂購</a></h2>
 				</li>
                 
                 <li>
-					<h2>飲料</h2>
+					<h2 align="center"><a href="drinks.jsp">飲料</a></h2>
 				</li>
                 
                 <li>
-					<h2>其他</h2>
+					<h2 align="center"><a href="other.jsp">其他</a></h2>
 				</li>
 			</ul>
 		</div>
