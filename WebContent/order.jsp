@@ -44,41 +44,6 @@ Released   : 20110411
    
 	<!-- end #header -->
 	<div id="page">
-    
-	  <div id="sidebar2">
-			<ul>
-			<div style="clear: both;" align="center">
-				
-                
-				<div id="favorite" style="font-size:20px"  align="center" ><b>加入我的最愛</b></div>
-                <br />
-                <div style="height:100px" align="center"><img src="images/star.png" alt="" width="100" height="100" /></div>
-				<br />
-                
-                <div id="lightfood">
-                
-                <div style="font-size:xx-large" align="center"></div>
-                <br />
-                <table>
-              <tr>
-                <td width="172">
-               <div style="height:180px">輕食圖</div>
-               </td>
-               </tr>
-               <td height="86">
-               <div>文字</div>
-               <br />
-               <div>文字</div>
-               </td>
-               </table>
-               
-               
-               </div>
-              
-			</ul>
-            </div>
-		
-		<!-- end #sidebar2 -->
      
         <div id="information">
         <div id="pic" align="center" ></div><br />
@@ -190,6 +155,41 @@ Released   : 20110411
 	  </div>
   </div>
 		<!-- end #content -->
+		
+			  <div id="sidebar2">
+			<ul>
+			<div style="clear: both;" align="center">
+				
+                
+				<div id="favorite" style="font-size:20px"  align="center" ><b>加入我的最愛</b></div>
+                <br />
+                <div style="height:100px" align="center"><img src="images/star.png" alt="" width="100" height="100" /></div>
+				<br />
+                
+                <div id="lightfood">
+                
+                <div style="font-size:xx-large" align="center"></div>
+                <br />
+                <table>
+              <tr>
+                <td width="172">
+               <div style="height:180px">輕食圖</div>
+               </td>
+               </tr>
+               <td height="86">
+               <div>文字</div>
+               <br />
+               <div>文字</div>
+               </td>
+               </table>
+               
+               
+               </div>
+              
+			</ul>
+            </div>
+		
+		<!-- end #sidebar2 -->
         
 	<div id="page-bgtop">
 	<div id="page-bgbtm">
