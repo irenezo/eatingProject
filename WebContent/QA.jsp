@@ -82,17 +82,16 @@ Released   : 20110411
 			   <td width="63" height="85">內容</td>
                <td width="246"> <div style="background-color:
 #FFFFFF;height:200px"></div></td>
-               
                 </tr>
-               
-                </table> 
-                  
-					
-			  </div>
-			</div>
+                </table>
+                
+                <div >
+                </div>
+			    </div>
+			    </div>
                       
 		  </div>
-	  </div>
+	      </div>
   </div>
 		<!-- end #content -->
         
