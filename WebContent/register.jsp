@@ -62,7 +62,7 @@ Released   : 20110411
 E-mail：<input type="email" name="email" required>XXX@XXX
 <br><br>
 &nbsp&nbsp&nbsp<input type="submit" value="送出">
-<input type="reset" value="重填">
+<input type="reset" value="重填">..
  			</form>
                   
 					
