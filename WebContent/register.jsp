@@ -55,13 +55,8 @@ Released   : 20110411
 			  <div class="entry" style="background-color:#FFDDAA">
                <table width="321" height="299">
                 <tr>
-			   <td width="63" height="80">帳號：</td>
-               <td width="246"> <div style="height:20px;background-color:
-#FFFFFF" ></div></td>
-			   <tr>
-			   <td width="63" height="80">密碼：</td>
-               <td width="246"> <div style="height:20px;background-color:
-#FFFFFF" ></div></td>
+			   <input type= "text" name="account"  pattern="[A-Za-z0-9]{1,10}" maxlength="10" required>不可超過10碼<br>
+密碼：<input type="password" name="psw" required><br>
 			   <tr>
  			   <td width="63" height="80">姓名：</td>
                <td width="246"> <div style="height:20px;background-color:
