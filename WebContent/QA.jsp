@@ -59,7 +59,7 @@ Released   : 20110411
 				</li>
                 
 				<li>
-					<h2>問題回報</h2>
+					<h2><a href="QA.jsp">問題回報</a></h2>
 				</li>
                 
 				
@@ -72,16 +72,14 @@ Released   : 20110411
 						
 			  <div class="entry" style="background-color:#FFDDAA">
                <table width="321" height="299">
+             <tr>
+			 <td><font size="5"> 主旨 </font></td>
+			 <td><input type="text" name="major"> </td>
+              </tr>   
+                
                 <tr>
-			   <td width="63" height="206">主旨</td>
-               <td width="246"> <div style="height:20px;background-color:
-#FFFFFF" >圖片</div></td>
-              
-                </tr>
-                <tr>
-			   <td width="63" height="85">內容</td>
-               <td width="246"> <div style="background-color:
-#FFFFFF;height:200px"></div></td>
+			   <td><font size="5">內容</font></td>
+               <td><input type="text" name="detail"></td>
                 </tr>
                 </table>
                 <button type="button" onclick="document.getElementById('demo').style.display='block'">傳送</button>
@@ -104,7 +102,7 @@ Released   : 20110411
         
 		
       
-		<div style="clear: both;" align="right">問題回報</div>
+		<div style="clear: both;" align="right"><a href="QA.jsp">問題回報</a></div>
 	</div>
 	</div>
 	
