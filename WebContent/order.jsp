@@ -52,7 +52,7 @@ Released   : 20110411
                 
 				<div id="favorite" style="font-size:20px"  align="center" ><b>加入我的最愛</b></div>
                 <br />
-                <div style="height:100px" align="center"><img src="images/circle.png" alt="" width="100" height="100" /></div>
+                <div style="height:100px" align="center"><img src="images/star.png" alt="" width="100" height="100" /></div>
 				<br />
                 
                 <div id="lightfood">

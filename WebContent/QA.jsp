@@ -84,6 +84,8 @@ Released   : 20110411
 #FFFFFF;height:200px"></div></td>
                 </tr>
                 </table>
+                <button type="button" onclick="document.getElementById('demo').style.display='block'">傳送</button>
+<p id="demo" style="display:none">感謝你的回報</p>
                 
                 <div >
                 </div>
@@ -105,6 +107,7 @@ Released   : 20110411
 		<div style="clear: both;" align="right">問題回報</div>
 	</div>
 	</div>
+	
 	<!-- end #page -->
 	<div id="footer">
 	  <p>&copy; Untitled. All rights reserved. Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
