@@ -318,6 +318,7 @@ a:hover {
 }
 
 #sidebar {
+	position:relative;
 	float: left;
 	width: 220px;
 	margin:0px 0px 0px 0px;
@@ -438,21 +439,21 @@ a:hover {
     float: left;
     width: 25%;
     padding: 10px;
-    height: 300px; /* Should be removed. Only for demonstration */
+    height: 700px; /* Should be removed. Only for demonstration */
 }
 
 .column2 {
     float: left;
     width: 50%;
     padding: 10px;
-    height: 300px; /* Should be removed. Only for demonstration */
+    height: 700px; /* Should be removed. Only for demonstration */
 }
 
 .column3 {
     float: left;
     width: 25%;
     padding: 10px;
-    height: 300px; /* Should be removed. Only for demonstration */
+    height: 700px; /* Should be removed. Only for demonstration */
 }
 
 
