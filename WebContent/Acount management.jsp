@@ -43,83 +43,80 @@ Released   : 20110411
 	<!-- end #menu -->
 	
    
-	<!-- end #header -->
-	<div id="page">
-   
-      <div id="sidebar">
-		<ul>
+	<div class="row">
+        <div class="column1">
+            <!-- 第1欄內容 -->
+            <div id="sidebar">
+		     <ul>
 				<li>
 					
 					<div style="clear: both;" align="center">
 				</li>
-				<div id="category" style="font-size:xx-large" align="center" ba><b>會員管理</b></div>
+				<div id="category" style="font-size:xx-large" align="center"><b>會員管理</b></div>
                 <br />
                 <li>
-					<h2>帳號管理</h2>
+					<h2 align="center">帳號管理</h2>
 				</li>
                 
 				<li>
-					<h2>問題回報</h2>
+					<h2 align="center">問題回報</h2>
 				</li>
                 
 				
 			</ul>	
 		</div>
-		<!-- end #sidebar -->
-        <div id="content">
-			<div class="post" style="background-color:#99FF99">
+		
+		    <!-- 第1欄內容結束 -->
+        </div>
+        <div class="column2">
+            <!-- 第2欄內容 -->
+
+				<div class="post" style="background-color:#99FF99">
 				<h2 class="title"><a href="#">帳號管理</a></h2>
 						
 			  <div class="entry" style="background-color:#FFDDAA">
-               <table width="321" height="299">
-                <tr>
-			   <td width="65" height="20">姓名：</td>
-               <td width="246"> <div style="height:20px;background-color:
-#FFFFFF" align="center">X小明</div></td>
-               </tr>
-               <tr>
-			   <td width="65" height="20">Email：</td>
-               <td width="246"> <div style="height:20px;background-color:
-#FFFFFF" align="center">xxx123@gmail.com</div></td>
-               </tr>
-               <tr>
-			   <td width="65" height="85">偏好店家：</td>
-               <td width="246"> <div style="background-color:
-#FFFFFF;height:20px" align="center">麥當勞</div><br>
-				<div style="background-color:
-#FFFFFF;height:20px" align="center">肯德基</div><br>
-				<div style="background-color:
-#FFFFFF;height:20px" align="center">胖老爹</div></td>
-                </tr>
+               <table width="300" height="280">
+                 <tr>
+			       <td>姓名：&nbsp<input type="text" name="name"></td>               
+                 </tr>
+                 <tr>
+			       <td>Email：<input type="text" name="name"></td>
+                 </tr>
+                 <tr>
+                   <td>偏好店家：</td>
+                 <tr> 
+                   <td><table>123</table></td></tr>
+			     <tr>
+			       <td><table>224</table></td>
+			     </tr>
+			     <tr>
+			       <td><table>339</table></td>
+			     </tr> 
+			     </tr>
+                
                 
                 </table>
                 
-                <div >
+                <input type="submit"  value="修改" style="background-color:lightgreen;">
+                
                 </div>
-			    </div>
-			    </div>
-                      
-		  </div>
-	      </div>
-  </div>
-		<!-- end #content -->
-        
-	<div id="page-bgtop">
-	<div id="page-bgbtm">
-		
-   	<table align="center">
-   	<tr align="right">
-   	<td width="50"><div style="height:20px;background-color:
-#FFDDAA" align="center">修改</div></td>
-	</tr>     
-   	</table>        
-        
-		
-      
-		<div style="clear: both;" align="right">問題回報</div>
-	</div>
-	</div>
-	<!-- end #page -->
+</div>
+            <!-- 第2欄內容結束 -->
+</div>
+        <div class="column3">
+            <!-- 第3欄內容 -->
+            	<div style="clear: both;" align="center">             
+				<h2><b>加入我的最愛</b><br/></h2>
+                <img src="images/star.png" alt="" width="100" height="100" /><br />
+                <table>
+                   <tr><td width="172"><img src="images/star.png" alt="" width="100" height="100" /></td></tr>
+                   <tr><td >文字 文字 文字 文字 文字 文字 文字 </td></tr>               
+               </table>    
+            <!-- 第3欄內容結束 -->
+        </div>
+    </div>
+    </div>
+    <!-- 內容：三欄式呈現結束 -->
 	<div id="footer">
 	  <p>&copy; Untitled. All rights reserved. Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
 	</div>
