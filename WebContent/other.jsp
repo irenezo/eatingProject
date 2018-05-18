@@ -82,11 +82,7 @@
                 <li>
 					<h2 align="center"><a href="mealbox.jsp">餐盒訂購</a></h2>
 				</li>
-                
-                <li>
-					<h2 align="center"><a href="drinks.jsp">飲料</a></h2>
-				</li>
-                
+            
                 <li>
 					<h2 align="center"><a href="other.jsp">其他</a></h2>
 				</li>
@@ -208,17 +204,19 @@
         <div class="column3">
             <!-- 第3欄內容 -->
             	<div style="clear: both;" align="center">             
-				<h2><b>加入我的最愛</b><br/></h2>
-                <img src="images/star.png" alt="" width="100" height="100" /><br />
+					<h2><b>今天吃什麼?</b><br/></h2>
+                <img src="images/circle.png" alt="" width="100" height="100" /><br />
+              
+                <h2><b>輕食區</b><br/></h2>
                 <table>
-                   <tr><td width="172"><img src="images/star.png" alt="" width="100" height="100" /></td></tr>
+                   <tr><td width="172" align="center"><img src="images/circle.png" alt="" width="100" height="100" /></td></tr>
                    <tr><td >文字 文字 文字 文字 文字 文字 文字 </td></tr>               
                </table>    
             <!-- 第3欄內容結束 -->
         </div>
     </div>
     </div>
-      <!-- 內容：三欄式呈現結束 -->
+    <!-- 內容：三欄式呈現結束 -->
     
     <p align="right"><a href="QA.jsp">問題回報</a></p>
 	

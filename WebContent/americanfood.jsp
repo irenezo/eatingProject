@@ -92,10 +92,6 @@ Released   : 20110411
 				</li>
                 
                 <li>
-					<h2 align="center"><a href="drinks.jsp">飲料</a></h2>
-				</li>
-                
-                <li>
 					<h2 align="center"><a href="other.jsp">其他</a></h2>
 				</li>
 			</ul>
