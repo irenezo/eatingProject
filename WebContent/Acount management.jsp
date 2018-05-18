@@ -52,7 +52,7 @@ Released   : 20110411
 					
 					<div style="clear: both;" align="center">
 				</li>
-				<div id="category" style="font-size:xx-large" align="center"><b>會員管理</b></div>
+				<div id="category" align="center"><b>會員管理</b></div>
                 <br />
                 <li>
 					<h2 align="center">帳號管理</h2>
