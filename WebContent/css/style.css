@@ -311,8 +311,8 @@ a:hover {
 	position:relative;
 	float: left;
 	width: 220px;
-	margin:0px 0px 0px 0px;
-	padding:0;
+	margin:0px px 0px 0px;
+	padding: 0px ;
 	background:#FFDDAA;
 }
 
@@ -433,12 +433,27 @@ a:hover {
 }
 
 /* Create three equal columns that floats next to each other */
-.column {
+.column1 {
     float: left;
-    width: 33.33%;
+    width: 25%;
     padding: 10px;
     height: 300px; /* Should be removed. Only for demonstration */
 }
+
+.column2 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.column3 {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
 
 /* Clear floats after the columns */
 .row:after {
