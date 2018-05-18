@@ -282,10 +282,11 @@ a:hover {
 /* Sidebar */
 #category {
 	background: #99FF99;
-	height:40px;
+	height:60px;
 	width: 220px;
 	margin: 0px;
 	padding: 25px 0px 0px 0px;
+	font-size:xx-large;
 	}
 	
 	
