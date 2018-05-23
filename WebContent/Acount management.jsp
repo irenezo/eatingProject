@@ -33,10 +33,9 @@ Released   : 20110411
 	  </div>
     
 		<ul>
-			
-        	<li><a href="#">首頁</a></li>
+        	<li><a href="index.jsp">首頁</a></li>
 			<li><a href="#">註冊</a></li>
-			<li><a href="#">登入</a></li>
+			<li><a href="#=Signln.jsp">登入</a></li>
 		</ul>
         <img src="images/icon2.png" alt="" width="227" height="86" /></div>
 	</div>
@@ -44,9 +43,8 @@ Released   : 20110411
 	
    
 	<!-- end #header -->
-	<div id="page">
-   
-      <div id="sidebar">
+	<div id="page"> 
+    <div id="sidebar">
 		<ul>
 				<li>
 					
@@ -61,11 +59,10 @@ Released   : 20110411
 				<li>
 					<h2>問題回報</h2>
 				</li>
-                
-				
-			</ul>	
+		</ul>	
 		</div>
 		<!-- end #sidebar -->
+		
         <div id="content">
 			<div class="post" style="background-color:#99FF99">
 				<h2 class="title"><a href="#">帳號管理</a></h2>

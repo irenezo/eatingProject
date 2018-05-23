@@ -22,7 +22,7 @@
 	  </div>
     
 	  <ul>			
-        	<li><a href="#">首頁</a></li>
+        	<li><a href="index.jsp">首頁</a></li>
 			<li><a href="#">註冊</a></li>
 			<li><a href="#">登入</a></li>
 	  </ul>
@@ -30,7 +30,7 @@
 	<!-- end #menu -->
 	<!-- 內容：三欄式呈現 -->
 	<div class="row">
-        <div class="column" style="background-color:#aaa;">
+        <div class="column1" style="background-color:#aaa;">
             <!-- 第1欄內容 -->
             <div id="information">
 		      <h2>資訊</h2><br />
@@ -41,11 +41,11 @@
                  <li>外送服務：</li>                
                  <li>網站連結</li>
                  <li>備註：</li>
-              </ul>			
+              </ul>		
 		    </div>
 		    <!-- 第1欄內容結束 -->
         </div>
-        <div class="column" style="background-color:#bbb;">
+        <div class="column2" style="background-color:#bbb;">
             <!-- 第2欄內容 -->
 
 				<h2 class="menutitle">菜單</h2>						
@@ -85,7 +85,7 @@
 
             <!-- 第2欄內容結束 -->
 
-        <div class="column" style="background-color:#ccc;">
+        <div class="column3" style="background-color:#ccc;">
             <!-- 第3欄內容 -->
             	<div style="clear: both;" align="center">             
 				<div id="favorite" style="font-size:20px"  align="center" ><b>加入我的最愛</b></div><br />
