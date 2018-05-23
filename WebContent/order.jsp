@@ -26,7 +26,8 @@
 			<li><a href="#">註冊</a></li>
 			<li><a href="#">登入</a></li>
 	  </ul>
-    <img src="images/icon2.png" alt="" width="235" height="84" /></div>
+      <img src="images/icon2.png" alt="" width="235" height="84" />
+    </div>
 	<!-- end #menu -->
 	<!-- 內容：三欄式呈現 -->
 	<div class="row">
@@ -66,7 +67,7 @@
                         <td width="20"><input type="text"  name="quantity"/></td>	               
                      </tr>
                      <tr>
-			           <td>圖片</td>
+			            <td>圖片</td>
                         <td width="72"> 文字</td>
                         <td width="48">$價錢</td>
                         <td width="45">X</td>
@@ -88,7 +89,7 @@
         <div class="column3" style="background-color:#ccc;">
             <!-- 第3欄內容 -->
             	<div style="clear: both;" align="center">             
-				<div id="favorite" style="font-size:20px"  align="center" ><b>加入我的最愛</b></div><br />
+				<h2><b>加入我的最愛</b><br/></h2>
                 <img src="images/star.png" alt="" width="100" height="100" /><br />
                 <table>
                    <tr><td width="172"><img src="images/star.png" alt="" width="100" height="100" /></td></tr>
@@ -97,11 +98,13 @@
             <!-- 第3欄內容結束 -->
         </div>
     </div>
-    <!-- 內容：三欄式呈現結束 -->
+    </div>
+      <!-- 內容：三欄式呈現結束 -->
     
+    <p align="right"><a href="QA.jsp">問題回報</a></p>
 	
 	<div id="footer">
-	  <p>&copy; Untitled. All rights reserved. Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.	</p>
+		  <p>&copy; Untitled. All rights reserved. Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.	</p>
 	</div>
 	<!-- end #footer -->
 </body>

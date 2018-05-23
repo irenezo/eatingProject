@@ -17,7 +17,7 @@ Released   : 20110411
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>Greenorange by TEMPLATED</title>
+<title>大家都來吃</title>
 <link href="css/style.css" rel="stylesheet" type="text/css" media="screen" />
 </head>
 <body>
@@ -40,18 +40,13 @@ Released   : 20110411
 		</ul>
     <img src="images/icon2.png" alt="" width="235" height="84" /></div>
 	<!-- end #menu -->
-	
-   
-	<!-- end #header -->
-	<div id="page">
-   
-        <div id="sidebar">
-			<ul>
-				<li>
-					
-					<div style="clear: both;" align="center">
-				</li>
-				<div id="category" style="font-size:xx-large" align="center" ba><b>分類</b></div>
+	<!-- 內容：三欄式呈現 -->
+	<div class="row">
+        <div class="column1">
+            <!-- 第1欄內容 -->
+            <div id="sidebar">
+		     		  <ul>
+				<div id="category" align="center"><b>分類</b></div>
                 <br />
                  <li>
 					<h2 align="center"><a href="taiwanesefood.jsp">台式料理</a></h2>
@@ -92,137 +87,90 @@ Released   : 20110411
                 <li>
 					<h2 align="center"><a href="mealbox.jsp">餐盒訂購</a></h2>
 				</li>
-                
-                <li>
-					<h2 align="center"><a href="drinks.jsp">飲料</a></h2>
-				</li>
-                
+                                              
                 <li>
 					<h2 align="center"><a href="other.jsp">其他</a></h2>
 				</li>
 			</ul>
-		</div>
-		<!-- end #sidebar -->
-        <div id="content">
-			<div class="post">
-				<h2 class="title"><a href="#"><img src="images/1.png" alt="" width="36" height="30" />台北熱門美食餐廳</a></h2>
-						
-			  <div class="entry">
-               <table width="431" height="256">
-                <tr>
-			   <td width="114"> <div>圖片</div></td>
-               <td width="113"> <div>圖片</div></td>
-               <td width="111"><div>圖片</div></td>
-                </tr>
-                <tr>
-			   <td width="114"> <div>文字</div></td>
-               <td width="113"> <div>文字</div></td>
-               <td width="111"><div>文字</div></td>
-               
-                </tr>
-                <tr>
-             <td height="114"><div>圖片</div></td>
-             <td><div>圖片</div></td>
-             <td><div>圖片</div></td>                
-                </tr>
-                <tr>
-			   <td width="114"> <div>文字</div></td>
-               <td width="113"> <div>文字</div></td>
-               <td width="111"><div>文字</div></td>
-                <td width="73"><div>更多</div></td>
-                </tr>
-                </table> 
-                  
-					
-			  </div>
-		  </div>
-		  <div class="post">
-				<h2 class="title"><a href="#"><img src="images/1.png" alt="" width="36" height="30" />新北熱門美食餐廳</a></h2>
-				
-				
-				
-					 <div class="entry">
-               <table width="431" height="256">
-                <tr>
-			   <td width="114"> <div align="center">圖片</div></td>
-               <td width="113"> <div align="center">圖片</div></td>
-               <td width="111"><div align="center">圖片</div></td>
-                </tr>
-                <tr>
-			   <td width="114"> <div align="center">文字</div></td>
-               <td width="113"> <div align="center">文字</div></td>
-               <td width="111"><div align="center">文字</div></td>
-               
-                </tr>
-                <tr>
-             <td height="114"><div align="center">圖片</div></td>
-             <td><div align="center">圖片</div></td>
-             <td><div align="center">圖片</div></td>                
-                </tr>
-                <tr>
-			   <td width="114"> <div align="center">文字</div></td>
-               <td width="113"> <div align="center">文字</div></td>
-               <td width="111"><div align="center">文字</div></td>
-                <td width="73"><div align="center">更多...</div></td>
-                </tr>
-                   </table> 
-                  
-					
 		    </div>
-		  </div>
-	  </div>
-  </div>
-		<!-- end #content -->
-        
-         <div id="sidebar2">
-			<ul>
-			<div style="clear: both;" align="center">
-				
+		    <!-- 第1欄內容結束 -->
+        </div>
+        <div class="column2">
+            <!-- 第2欄內容 -->
+
+				<h2 class="title"><img src="images/1.png" width="36" height="30">台北熱門美食餐廳</h2>					
+			    
+                   <table width="413" height="256" align="center">
+                   <tr>
+		            <td><img src="images/1.png" width="36" height="30"></td>
+                    <td><img src="images/1.png" width="36" height="30"></td>
+                    <td><img src="images/1.png" width="36" height="30"></td>
+                   </tr>
+                  <tr>
+			        <td>文字</td>
+                    <td>文字</td>
+                    <td>文字</td>
+                  </tr>
+                  <tr>
+                    <td><img src="images/1.png" width="36" height="30"></td>
+                    <td><img src="images/1.png" width="36" height="30"></td>
+                    <td><img src="images/1.png" width="36" height="30"></td>                
+                  </tr>
+                  <tr>
+  			        <td>文字</td>
+                    <td>文字</td>
+                    <td>文字</td>
+                    <td>更多</td>
+                  </tr>
+                 
                 
-				<div id="whattoeat" style="font-size:xx-large" align="center" >吃什麼呢?</div>
-                <br />
-                <div style="height:180px"><img src="images/circle.png" alt="" width="178" height="181" /></div>
-				<br />
-                
-                <div id="lightfood">
-                
-                <div style="font-size:xx-large" align="center">輕食區</div>
-                <br />
-                <table>
-              <tr>
-                <td width="172">
-               <div style="height:180px">輕食圖</div>
-               </td>
-               </tr>
-               <td height="86">
-               <div>文字</div>
-               <br />
-               <div>文字</div>
-               </td>
-               </table>
-               
-               
-               </div>
+                <table width="413" height="256" align="center">
+	            <h2 class="title"><a href="#"><img src="images/1.png" alt="" width="36" height="30" />新北熱門美食餐廳</a></h2>
+                 <tr>
+		   	       <td><img src="images/1.png" width="36" height="30"></td>
+                   <td><img src="images/1.png" width="36" height="30"></td>
+                   <td><img src="images/1.png" width="36" height="30"></td>
+                 </tr>
+                 <tr>
+			       <td>文字</td>
+                   <td>文字</td>
+                   <td>文字</td>
+                 </tr>               
+                 <tr>
+                   <td><img src="images/1.png" width="36" height="30"></td>
+                   <td><img src="images/1.png" width="36" height="30"></td>
+                   <td><img src="images/1.png" width="36" height="30"></td>                
+                 </tr>
+                 <tr>
+			       <td>文字</td>
+                   <td>文字</td>
+                   <td>文字</td>
+                   <td>更多</td>
+                 </tr>
+                  
+                   </table>      
+
+	     </div>
+
+            <!-- 第2欄內容結束 -->
+
+        <div class="column3">
+            <!-- 第3欄內容 -->
+            	<div style="clear: both;" align="center">             
+					<h2><b>今天吃什麼?</b><br/></h2>
+                <img src="images/circle.png" alt="" width="100" height="100" /><br />
               
-			</ul>
-            </div>
-		
-		<!-- end #sidebar2 -->
-        
-        
-        
-	<div id="page-bgtop">
-	<div id="page-bgbtm">
-		
-        
-        
-		
-      
-		<div style="clear: both;" align="right">問題回報</div>
-	</div>
-	</div>
-	</div>
-	<!-- end #page -->
+                <h2><b>輕食區</b><br/></h2>
+                <table>
+                   <tr><td width="172" align="center"><img src="images/circle.png" alt="" width="100" height="100" /></td></tr>
+                   <tr><td >文字 文字 文字 文字 文字 文字 文字 </td></tr>               
+               </table>    
+            <!-- 第3欄內容結束 -->
+        </div>
+    </div>
+    </div>
+    <!-- 內容：三欄式呈現結束 -->
+	
 	<div id="footer">
 	  <p>&copy; Untitled. All rights reserved. Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.	</p>
 	</div>
