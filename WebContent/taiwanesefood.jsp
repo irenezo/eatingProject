@@ -1,4 +1,7 @@
-<%@ page language="Java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<%@page language="java" contentType="text/html;charset=utf-8"
+	pageEncoding="utf-8"%>
+<%@page import="java.sql.*"%>
+<%@page import="java.util.*"%>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <!--
@@ -50,49 +53,36 @@ Released   : 20110411
 		     		  <ul>
 				<div id="category" align="center"><b>分類</b></div>
                 <br />
-                 <li>
-					<h2 align="center"><a href="taiwanesefood.jsp">台式料理</a></h2>
-				</li>
-                
-				<li>
-					<h2 align="center"><a href="westernfood.jsp">西式料理</a></h2>
-				</li>
-                
-				<li>
-					<h2 align="center"><a href="japanesefood.jsp">日式料理</a></h2>
-				</li>
-                
-				<li>
-					<h2 align="center"><a href="koreanfood.jsp">韓式料理</a></h2>
-				</li>
-                
-                <li>
-					<h2 align="center"><a href="americanfood.jsp">美式料理</a></h2>
-				</li>
-                
-                <li>
-					<h2 align="center"><a href="italianfood.jsp">義式料理</a></h2>
-				</li>
-                
-                <li>
-					<h2 align="center"><a href="HKfood.jsp">港式料理</a></h2>
-				</li>
-                
-                <li>
-					<h2 align="center"><a href="brunch.jsp">早午餐</a></h2>
-				</li>
-                
-                <li>
-					<h2 align="center"><a href="hotpot.jsp">火鍋類</a></h2>
-				</li>
-                
-                <li>
-					<h2 align="center"><a href="mealbox.jsp">餐盒訂購</a></h2>
-				</li>
-              
-                <li>
-					<h2 align="center"><a href="other.jsp">其他</a></h2>
-				</li>
+                   <%
+			Connection con = null;
+			{
+
+				try {
+					String JDriver = "net.ucanaccess.jdbc.UcanaccessDriver";							
+					Class.forName(JDriver);
+					String url = "jdbc:ucanaccess://C:/Users/NTUNHS/git/eatingProject/WebContent/Food0518.accdb";
+					con = DriverManager.getConnection(url,"","");
+					Statement stmt = con.createStatement();
+					ResultSet rs = stmt.executeQuery("SELECT * FROM Category");
+		
+		%>
+		
+				<ul>
+				<%while (rs.next()) {%>
+					<li><a href="taiwanesefood.jsp?id=<%=rs.getString("CategoryID")%>"><span style="font-size:25px;"><%=rs.getString("CategoryName")%></span></a></li>					
+				<%}%>
+				</ul>
+			
+	<%
+		
+					rs.close();
+					stmt.close();
+					/*con.close();*/
+				} catch (Exception ex) {
+					ex.printStackTrace();
+				}
+			}
+		%>
 			</ul>
 		    </div>
 		    <!-- 第1欄內容結束 -->

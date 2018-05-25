@@ -44,13 +44,13 @@ Released   : 20110411
     <img src="images/icon2.png" alt="" width="235" height="84" /></div>
 	<!-- end #menu -->
 	<!-- 內容：三欄式呈現 -->
-	<div class="row">
+		<div class="row">
         <div class="column1">
             <!-- 第1欄內容 -->
             <div id="sidebar">
 		     		  <ul>
 				<div id="category" align="center"><b>分類</b></div>
-                
+				<br>         
                 <%
 			Connection con = null;
 			{
@@ -67,15 +67,11 @@ Released   : 20110411
 		
 				<ul>
 				<%while (rs.next()) {%>
-					<li><a href="taiwanesefood.jsp?id=<%=rs.getString("CategoryID")%>"><span><%=rs.getString("CategoryName")%></span></a></li>					
+					<li><a href="taiwanesefood.jsp?id=<%=rs.getString("CategoryID")%>"><span style="font-size:25px;"><%=rs.getString("CategoryName")%></span></a></li>					
 				<%}%>
 				</ul>
 			
-		
-		</div>
-	</div>
-	
-<%
+	<%
 		
 					rs.close();
 					stmt.close();
