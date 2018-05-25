@@ -31,22 +31,24 @@
 	<!-- end #menu -->
 	<!-- 內容：三欄式呈現 -->
 	<div class="row">
-        <div class="column1" style="background-color:#aaa;">
+        <div class="column1" style="background-color: #ffffcc;">
             <!-- 第1欄內容 -->
             <div id="information">
-		      <h2>資訊</h2><br />
-		      <ul type="circle">
+		      <h2>資訊</h2>
+		      <a href="https://www.google.com.tw/maps/@25.0448354,121.5079269,15z"><img src="images/mapIcon.png" width="50" height="50" align="right"/></a>
+		      </br><ul type="circle">
                  <li>營業時間：</li>                
 			     <li>地址：</li>
                  <li>電話：</li>
                  <li>外送服務：</li>                
                  <li>網站連結</li>
                  <li>備註：</li>
+                 <li>其他外送服務 : <a href="#">UBER</a></li>
               </ul>		
 		    </div>
 		    <!-- 第1欄內容結束 -->
         </div>
-        <div class="column2" style="background-color:#bbb;">
+        <div class="column2" style="background-color:#ffffcc;">
             <!-- 第2欄內容 -->
 
 				<h2 class="menutitle">菜單</h2>						
@@ -86,15 +88,22 @@
 
             <!-- 第2欄內容結束 -->
 
-        <div class="column3" style="background-color:#ccc;">
+        <div class="column3" style="background-color:#ffffcc;">
             <!-- 第3欄內容 -->
             	<div style="clear: both;" align="center">             
 				<h2><b>加入我的最愛</b><br/></h2>
                 <img src="images/star.png" alt="" width="100" height="100" /><br />
-                <table>
-                   <tr><td width="172"><img src="images/star.png" alt="" width="100" height="100" /></td></tr>
-                   <tr><td >文字 文字 文字 文字 文字 文字 文字 </td></tr>               
-               </table>    
+				<table style="border: 5px double rgb(109, 2, 107); height: 300px; background-color: rgb(255, 255, 255); width: 150px;" align="center" cellpadding="5" cellspacing="10" frame="border" rules="all">
+    			<br></br><caption><h3>你點了什麼呢?</h3></caption>
+   				<tbody>
+     			<tr>
+      			<td>XX套餐</td>
+      			</tr>
+      			<tr>
+      			<td>總計</td>
+      			</tr>
+   				</tbody>
+ 				</table>        
             <!-- 第3欄內容結束 -->
         </div>
     </div>
