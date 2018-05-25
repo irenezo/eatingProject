@@ -44,20 +44,14 @@
             <!-- 第2欄內容 -->
 
 				<div class="post" style="background-color:#99FF99">
-				<h2 class="title"><a href="#">註冊</a></h2>
-						
-			  <div class="entry" style="background-color:#FFDDAA">
-              
-                <form action="register_process.jsp" method="get">
-<br>         
-帳號：&nbsp&nbsp&nbsp<input type= "text" name="account"  pattern="[A-Za-z0-9]{1,10}" maxlength="10" required>不可超過10碼<br><br>
-密碼：&nbsp&nbsp&nbsp<input type="password" name="psw" pattern="[A-Za-z0-9]{1,12}" maxlength="12" required>最多12碼<br><br>
-姓名：&nbsp&nbsp&nbsp<input type="text" name="uname" required><br><br>			   
-E-mail：<input type="email" name="Email" required>XXX@XXX
-<br><br>
-<input type="submit" value="送出" style="background-color:lightgreen;">
-<input type="reset" value="重填" style="background-color:lightgreen;">
- 			</form>
+				 <%
+session.setAttribute("uname",request.getParameter("uname"));
+	      //#logout
+	      //session.setAttribute("uname","");
+	      //response.sendRedirect("login.jsp");
+
+out.println("您好，已完成註冊");
+		%>
                   
 					
 			  </div>
