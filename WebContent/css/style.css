@@ -463,3 +463,8 @@ a:hover {
     display: table;
     clear: both;
 }
+
+<!-- 計算數量的按鈕 -->
+#text{
+	font-size : 10px;	
+}

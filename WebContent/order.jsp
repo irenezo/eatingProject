@@ -52,14 +52,27 @@
             <!-- 第2欄內容 -->
 
 				<h2 class="menutitle">菜單</h2>						
-			    
+			  
                    <table width="413" height="256">
                      <tr>
                         <td>圖片</td>
                	        <td width="72"> 文字</td>
                         <td width="48">$價錢</td>
                         <td width="45">X</td>
-                        <td width="20"><input type="text"  name="quantity"/></td>	               
+                        <!-- 計算數量的按鈕 -->
+                        <td width="20"><h2 id="text">1</h2><input type="button" id="bt" value="點我+1"/></td>
+                        <script>
+                        var oText = document.getElementById("text");
+                        var oBt = document.getElementById("bt");
+                        var index = 1;
+ 						
+                        oBt.onclick = function(){
+                        	index = index + 1;
+                        	//alert(index);
+                        	oText.innerHTML = index;
+                  		
+                        }
+                        </script>              
                      </tr>
                      <tr>
 			            <td>圖片</td>
