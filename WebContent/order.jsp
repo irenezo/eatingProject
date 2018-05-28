@@ -56,21 +56,31 @@
                    <table width="413" height="256">
                      <tr>
                         <td>圖片</td>
-               	        <td width="72"> 文字</td>
-                        <td width="48">$價錢</td>
-                        <td width="45">X</td>
+               	        <td>文字</td>
+                        <td>$價錢</td>
+                        <td>X</td>
                         <!-- 計算數量的按鈕 -->
-                        <td width="20"><h2 id="text">1</h2><input type="button" id="bt" value="點我+1"/></td>
+                        <td><input type="text" value="1" id="text"></id>
+                        <input type="button" id="bt1" value="+1"/>
+                        <input type="button" id="bt2" value="-1"/></td>
                         <script>
                         var oText = document.getElementById("text");
-                        var oBt = document.getElementById("bt");
+                        var oBt1 = document.getElementById("bt1");
+                        var oBt2 = document.getElementById("bt2");
                         var index = 1;
- 						
-                        oBt.onclick = function(){
+ 						//+1操作
+                        oBt1.onclick = function(){
                         	index = index + 1;
                         	//alert(index);
-                        	oText.innerHTML = index;
-                  		
+                        	oText.value = index;
+
+                        }
+ 						//-1操作
+ 						oBt2.onclick = function(){
+                        	index = index - 1;
+                        	//alert(index);
+							oText.value = index;
+                        	
                         }
                         </script>              
                      </tr>
