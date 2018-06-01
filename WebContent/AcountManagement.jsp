@@ -55,7 +55,7 @@ Released   : 20110411
 				<div id="category" align="center"><b>會員管理</b></div>
                 <br />
                 <li>
-					<h2 align="center">帳號管理</h2>
+					<h2 align="center"><a href="AcountMangement.jsp">帳號管理</h2>
 				</li>
                 <li>
 					<h2 align="center">建立團購</h2>
