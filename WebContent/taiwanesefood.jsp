@@ -60,11 +60,13 @@ Released   : 20110411
 				try {
 					String JDriver = "net.ucanaccess.jdbc.UcanaccessDriver";							
 					Class.forName(JDriver);
-					String url = "jdbc:ucanaccess://C:/Users/NTUNHS/git/eatingProject/WebContent/Food0518.accdb";
+					String url = "jdbc:ucanaccess://C:/Users/NTUNHS/git/eatingProject/WebContent/Food.accdb";
 					con = DriverManager.getConnection(url,"","");
-					Statement stmt = con.createStatement();
+					Statement stmt = con.createStatement();					
 					ResultSet rs = stmt.executeQuery("SELECT * FROM Category");
-		
+					ResultSet rs1= stmt.executeQuery("SELECT distinct * From Restaurant");
+					ResultSet rs2= stmt.executeQuery("SELECT distinct * From Restaurant");
+					
 		%>
 		
 				<ul>
@@ -72,17 +74,13 @@ Released   : 20110411
 					<li><a href="taiwanesefood.jsp?id=<%=rs.getString("CategoryID")%>"><span style="font-size:25px;"><%=rs.getString("CategoryName")%></span></a></li>					
 				<%}%>
 				</ul>
+				
+			<%	
 			
-	<%
-		
-					rs.close();
-					stmt.close();
-					/*con.close();*/
-				} catch (Exception ex) {
-					ex.printStackTrace();
-				}
-			}
-		%>
+			rs.close();
+			
+			%>
+	
 			</ul>
 		    </div>
 		    <!-- 第1欄內容結束 -->
@@ -90,7 +88,9 @@ Released   : 20110411
         <div class="column2">
             <!-- 第2欄內容 -->
 
-				<h2 class="title">台式料理1<h2>
+				<h2 class="title">		
+				台式料理
+				</h2>
 			
 				<h2>台北市 
 				<select id=type name="type" onchange="updateData(this)">
@@ -112,25 +112,57 @@ Released   : 20110411
 			    
                    <table width="413" height="256" align="center">
                    <tr>
-		            <td><img src="images/1.png" width="36" height="30"></td>
-                    <td><img src="images/1.png" width="36" height="30"></td>
-                    <td><img src="images/1.png" width="36" height="30"></td>
-                   </tr>
-                  <tr>
-			        <td>文字</td>
-                    <td>文字</td>
-                    <td>文字</td>
+                  <%
+                  int i=0;                  
+                  while (rs1.next() && i<3) {
+                  %>
+		             <td><%=rs1.getString("RestName")%></td>
+                  <%
+                  i=i+1;
+                  }
+                  
+                 
+                  %> 
                   </tr>
+             
                   <tr>
-                    <td><img src="images/1.png" width="36" height="30"></td>
-                    <td><img src="images/1.png" width="36" height="30"></td>
-                    <td><img src="images/1.png" width="36" height="30"></td>                
+                  <%
+                  int j=0;                 
+                  while (rs2.next() && j<3) {                     
+                  %>                  
+		             <td><%=rs2.getString("RestName")%></td>
+		          <%
+                     j=j+1;
+                  }
+                  			                  
+                  %>               
                   </tr>
+                  
+                   <tr>
+                  <%
+                  int k=0;                  
+                  while (rs1.next() && k<3) {
+                  %>
+		             <td><%=rs1.getString("RestName")%></td>
+                  <%
+                  k=k+1;
+                  }
+                  
+                  rs1.close();
+                  %> 
+                  </tr>
+             
                   <tr>
-  			        <td>文字</td>
-                    <td>文字</td>
-                    <td>文字</td>
-                    <td>更多</td>
+                  <%
+                  int l=0;                 
+                  while (rs2.next() && l<3) {                     
+                  %>                  
+		             <td><%=rs2.getString("RestName")%></td>
+		          <%
+                     l=l+1;
+                  }
+                  rs2.close();		                  
+                  %>               
                   </tr>
                  </table>
                 
@@ -213,6 +245,17 @@ Released   : 20110411
         </div>
     </div>
     </div>
+    
+    <%
+		
+				
+					
+					/*con.close();*/
+				} catch (Exception ex) {
+					ex.printStackTrace();
+				}
+			}
+		%>
     <!-- 內容：三欄式呈現結束 -->
     
     <p align="right"><a href="QA.jsp">問題回報</a></p>

@@ -6,7 +6,7 @@
   
 
 <%
-session.setAttribute("username","");
+session.setAttribute("UserName","");
 response.sendRedirect("login.jsp");
 			
 	%>
