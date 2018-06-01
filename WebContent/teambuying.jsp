@@ -127,8 +127,10 @@ Released   : 20110411
 						</select>
 					</td>
 				<tr> 
-					<td>截止時間： 
-					
+					<td>
+					<label for="appt-time">截止時間: </label>
+					<input id="datetime" type="datetime-local" value="2018-06-01上午08:30">
+				
 					</td>
 			     </tr>
                 
