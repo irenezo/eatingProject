@@ -127,10 +127,19 @@ Released   : 20110411
 						</select>
 					</td>
 				<tr> 
-					<td>
-					<label for="appt-time">截止時間: </label>
-					<input id="datetime" type="datetime-local" value="2018-06-01上午08:30">
-				
+					<td>截止時間:
+					<select>
+  						<option value="2018/06/01">2018/06/01</option>
+ 						<option value="2018/06/02">2018/06/02</option>
+ 						<option value="2018/06/03">2018/06/03</option>
+ 					</select>
+ 					<select>
+  						<option value="08:00">08:00</option>
+ 						<option value="08:30">08:30</option>
+ 						<option value="09:00">09:00</option>
+ 						<option value="09:30">09:30</option>
+ 						<option value="10:00">10:00</option>
+ 					</select>
 					</td>
 			     </tr>
                 
