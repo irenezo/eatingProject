@@ -59,9 +59,9 @@ Released   : 20110411
 					String JDriver = "net.ucanaccess.jdbc.UcanaccessDriver";							
 					Class.forName(JDriver);
 
-					String url = "jdbc:ucanaccess://C:/Users/NTUNHS/git/eatingProject/WebContent/Food.accdb";
+					String url = "jdbc:ucanaccess://D:/EATPROJECT/eatingproject/WebContent/Food.accdb";
 
-					String url = "jdbc:ucanaccess://D:/EATPROJECT/eatingproject/WebContent/Food0518.accdb";
+					String url = "jdbc:ucanaccess://D:/EATPROJECT/eatingproject/WebContent/Food.accdb";
 
 					con = DriverManager.getConnection(url,"","");
 					Statement stmt = con.createStatement();					
