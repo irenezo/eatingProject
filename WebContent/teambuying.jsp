@@ -56,7 +56,7 @@ Released   : 20110411
 					<h2 align="center">帳號管理</h2>
 				</li>
                 <li>
-					<h2 align="center">建立團購</h2>
+					<h2 align="center"><a href="teambuying.jsp">建立團購</h2>
 				</li>
 				<li>
 					<h2 align="center">團購清單</h2>
