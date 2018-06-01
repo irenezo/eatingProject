@@ -92,6 +92,22 @@ Released   : 20110411
                  <tr>
 			       <td>餐廳名稱：&nbsp<input type="text" name="name"></td>
                  </tr>
+                 <tr> 
+					<td>截止時間:
+					<select>
+  						<option value="2018/06/01">2018/06/01</option>
+ 						<option value="2018/06/02">2018/06/02</option>
+ 						<option value="2018/06/03">2018/06/03</option>
+ 					</select>
+ 					<select>
+  						<option value="08:00">08:00</option>
+ 						<option value="08:30">08:30</option>
+ 						<option value="09:00">09:00</option>
+ 						<option value="09:30">09:30</option>
+ 						<option value="10:00">10:00</option>
+ 					</select>
+					</td>
+			     </tr>
                  <tr>
 			       <td>建立日期：&nbsp<input type="text" name="name"></td>
                  </tr>
@@ -121,5 +137,6 @@ Released   : 20110411
 	  <p>&copy; Untitled. All rights reserved. Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
 	</div>
 	<!-- end #footer -->
+
 </body>
 </html>
