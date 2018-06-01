@@ -58,11 +58,12 @@ Released   : 20110411
 				try {
 					String JDriver = "net.ucanaccess.jdbc.UcanaccessDriver";							
 					Class.forName(JDriver);
-					String url = "jdbc:ucanaccess://C:/Users/NTUNHS/git/eatingProject/WebContent/Food0518.accdb";
+					String url = "jdbc:ucanaccess://C:/Users/NTUNHS/git/eatingProject/WebContent/Food.accdb";
 					con = DriverManager.getConnection(url,"","");
-					Statement stmt = con.createStatement();
+					Statement stmt = con.createStatement();					
 					ResultSet rs = stmt.executeQuery("SELECT * FROM Category");
-		
+					ResultSet rs2= stmt.executeQuery("SELECT distinct * From Restaurant");
+		            
 		%>
 		
 				<ul>
@@ -74,13 +75,7 @@ Released   : 20110411
 	<%
 		
 					rs.close();
-					stmt.close();
-					/*con.close();*/
-				} catch (Exception ex) {
-					ex.printStackTrace();
-				}
-			}
-		%>
+					%>
 			</ul>
 		    </div>
 		    <!-- 第1欄內容結束 -->
@@ -90,17 +85,35 @@ Released   : 20110411
 
 				<h2 class="title"><img src="images/1.png" width="36" height="30">台北熱門美食餐廳</h2>					
 			    
-                   <table width="413" height="256" align="center">
-                   <tr>
-		            <td><img src="images/1.png" width="36" height="30"></td>
-                    <td><img src="images/1.png" width="36" height="30"></td>
-                    <td><img src="images/1.png" width="36" height="30"></td>
-                   </tr>
+              <table width="413" height="256" align="center">
+                             
                   <tr>
-			        <td>文字</td>
-                    <td>文字</td>
-                    <td>文字</td>
+                  <%
+                  int i=0;                  
+                  while (rs2.next() && i<3) {
+                  %>
+		             <td><%=rs2.getString("RestName")%></td>
+                  <%
+                  i=i+1;
+                  }
+                  
+                 
+                  %> 
                   </tr>
+             
+                  <tr>
+                      <%
+                  int j=1;                 
+                  while (rs2.next()) {                     
+                	 if (j>=3){%>                  
+		                 <td><%=rs2.getString("RestName")%></td>
+		             <%} 
+                     j=i+1;
+                  }
+                   rs2.close();				                  
+                  %>               
+                  </tr>
+                  
                   <tr>
                     <td><img src="images/1.png" width="36" height="30"></td>
                     <td><img src="images/1.png" width="36" height="30"></td>
@@ -108,12 +121,12 @@ Released   : 20110411
                   </tr>
                   <tr>
   			        <td>文字</td>
-                    <td>文字</td>
-                    <td>文字</td>
+  			        <td>文字</td>
+  			        <td>文字</td>
                     <td>更多</td>
                   </tr>
-                 
-                
+              
+                </table>
                 <table width="413" height="256" align="center">
 	            <h2 class="title"><a href="#"><img src="images/1.png" alt="" width="36" height="30" />新北熱門美食餐廳</a></h2>
                  <tr>
@@ -159,6 +172,13 @@ Released   : 20110411
         </div>
     </div>
     </div>
+  
+	<%			con.close();
+				} catch (Exception ex) {
+					ex.printStackTrace();
+				}
+			}
+		%>
     <!-- 內容：三欄式呈現結束 -->
 	
 	<div id="footer">
