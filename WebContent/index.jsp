@@ -58,10 +58,11 @@ Released   : 20110411
 				try {
 					String JDriver = "net.ucanaccess.jdbc.UcanaccessDriver";							
 					Class.forName(JDriver);
-					String url = "jdbc:ucanaccess://C:/Users/NTUNHS/git/eatingProject/WebContent/Food0518.accdb";
+					String url = "jdbc:ucanaccess://D:/EATPROJECT/eatingproject/WebContent/Food0518.accdb";
 					con = DriverManager.getConnection(url,"","");
 					Statement stmt = con.createStatement();
 					ResultSet rs = stmt.executeQuery("SELECT * FROM Category");
+					
 		
 		%>
 		
