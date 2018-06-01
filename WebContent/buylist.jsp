@@ -76,7 +76,7 @@ Released   : 20110411
 				<h2 class="title"><a href="#">團購清單</a></h2>
 						
 			  <div class="entry" style="background-color:#FFDDAA">
-               <table width="200" height="50">
+               <table width="150" height="50">
                  <tr>
 			       <td>編輯</td>
 			       <td>│</td> 
