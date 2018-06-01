@@ -90,7 +90,7 @@ Released   : 20110411
         <div class="column2">
             <!-- 第2欄內容 -->
 
-				<h2 class="title">台式料理<h2>
+				<h2 class="title">台式料理1<h2>
 			
 				<h2>台北市 
 				<select id=type name="type" onchange="updateData(this)">
