@@ -45,7 +45,7 @@ Released   : 20110411
    
 	<div class="row">
         <div class="column1">
-            <!-- 第1欄內容 -->
+            <!-- 第1欄內容d -->
             <div id="sidebar">
 		     <ul>
 				<li>
@@ -73,68 +73,18 @@ Released   : 20110411
             <!-- 第2欄內容 -->
 
 				<div class="post" style="background-color:#99FF99">
-				<h2 class="title"><a href="#">建立團購</a></h2>
+				<h2 class="title"><a href="#">團購清單</a></h2>
 						
 			  <div class="entry" style="background-color:#FFDDAA">
-               <table width="300" height="280">
+               <table width="200" height="50">
                  <tr>
-			       <td>團購單號：&nbsp<input type="text" name="name"></td>               
+			       <td>編輯</td>
+			       <td>│</td> 
+			       <td>總覽</td>               
                  </tr>
-                 <tr>
-			       <td>團長名稱：&nbsp<input type="text" name="name"></td>               
-                 </tr>
-				 <tr>
-			       <td>地區：&nbsp<input type="text" name="name"></td>
-                 </tr>
-                 <tr>
-			       <td>分類：&nbsp<input type="text" name="name"></td>
-                 </tr>
-                 <tr>
-			       <td>餐廳名稱：&nbsp<input type="text" name="name"></td>
-                 </tr>
-                 <tr> 
-					<td>截止時間:
-					<select>
-  						<option value="2018/06/01">2018/06/01</option>
- 						<option value="2018/06/02">2018/06/02</option>
- 						<option value="2018/06/03">2018/06/03</option>
- 					</select>
- 					<select>
-  						<option value="08:00">08:00</option>
- 						<option value="08:30">08:30</option>
- 						<option value="09:00">09:00</option>
- 						<option value="09:30">09:30</option>
- 						<option value="10:00">10:00</option>
- 					</select>
-					</td>
-			     </tr>
-                 <tr>
-			       <td>建立日期：&nbsp<input type="text" name="name"></td>
-                 </tr>
-                </table>
-                
-                <input type="submit"  value="建立" style="background-color:lightgreen;">
-                
-                </div>
-</div>
-            <!-- 第2欄內容結束 -->
-</div>
-        <div class="column3">
-            <!-- 第3欄內容 -->
-            	<div style="clear: both;" align="center">             
-				<h2><b>加入我的最愛</b><br/></h2>
-                <img src="images/star.png" alt="" width="100" height="100" /><br />
-                <table>
-                   <tr><td width="172"><img src="images/star.png" alt="" width="100" height="100" /></td></tr>
-                   <tr><td >文字 文字 文字 文字 文字 文字 文字 </td></tr>               
-               </table>    
-               
-            <!-- 第3欄內容結束 -->
-        </div>
-    </div>
-    </div>
-			<table border="1" align="center">
-　				<tr>
+                 </table>
+                 <table border="1" align="center">
+                 　				<tr>
 					<td colspan="8" style="background-color:#FF9D40">已建立的團購紀錄</td>
 				</tr>
 　				<tr style="background-color:#FFDDAA" align="center">
@@ -173,12 +123,32 @@ Released   : 20110411
  					<td>2018/06/03 08:00</td>
  					<td>2018/06/03 08:00</td>
  				</tr>
-			</table>
+                </table>
+                 
+                
+                <input type="submit"  value="建立" align="right" style="background-color:lightgreen;">
+                
+                </div>
+</div>
+            <!-- 第2欄內容結束 -->
+</div>
+        <div class="column3">
+            <!-- 第3欄內容 -->
+            	<div style="clear: both;" align="center">             
+				<h2><b>加入我的最愛</b><br/></h2>
+                <img src="images/star.png" alt="" width="100" height="100" /><br />
+                <table>
+                   <tr><td width="172"><img src="images/star.png" alt="" width="100" height="100" /></td></tr>
+                   <tr><td >文字 文字 文字 文字 文字 文字 文字 </td></tr>               
+               </table>    
+            <!-- 第3欄內容結束 -->
+        </div>
+    </div>
+    </div>
     <!-- 內容：三欄式呈現結束 -->
 	<div id="footer">
 	  <p>&copy; Untitled. All rights reserved. Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
 	</div>
 	<!-- end #footer -->
-
 </body>
 </html>
