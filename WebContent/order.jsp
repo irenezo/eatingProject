@@ -86,24 +86,30 @@
                      </tr>
                      <tr>
 			            <td>圖片</td>
-                        <td width="72"> 文字</td>
-                        <td width="48">$價錢</td>
-                        <td width="45">X</td>
-                        <td width="20"><input type="text"  name="quantity"/></td>	               
+               	        <td>文字</td>
+                        <td>$價錢</td>
+                        <td>X</td>
+                        <td><input type="text" value="1" id="text"></id>
+                        <input type="button" id="bt1" value="+1"/>
+                        <input type="button" id="bt2" value="-1"/></td>               
                      </tr>
                      <tr>
 			            <td>圖片</td>
-                        <td width="72"> 文字</td>
-                        <td width="48">$價錢</td>
-                        <td width="45">X</td>
-                        <td width="20"><input type="text"  name="quantity"/></td>	               
+               	        <td>文字</td>
+                        <td>$價錢</td>
+                        <td>X</td>
+                        <td><input type="text" value="1" id="text"></id>
+                        <input type="button" id="bt1" value="+1"/>
+                        <input type="button" id="bt2" value="-1"/></td>	               
                       </tr>
                      <tr>
 			            <td>圖片</td>
-                        <td width="72"> 文字</td>
-                        <td width="48">$價錢</td>
-                        <td width="45">X</td>
-                        <td width="20"><input type="text"  name="quantity"/></td>	               
+               	        <td>文字</td>
+                        <td>$價錢</td>
+                        <td>X</td>
+                        <td><input type="text" value="1" id="text"></id>
+                        <input type="button" id="bt1" value="+1"/>
+                        <input type="button" id="bt2" value="-1"/></td>	               
                      </tr>
                    </table>      
 
