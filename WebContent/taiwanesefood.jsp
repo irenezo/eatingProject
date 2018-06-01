@@ -20,7 +20,7 @@ Released   : 20110411
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>大家都來吃</title>
+<title>台式料理</title>
 <link href="css/style.css" rel="stylesheet" type="text/css" media="screen" />
 </head>
 <body>
@@ -35,44 +35,36 @@ Released   : 20110411
 					</form>
 	  </div>
     
-	  <ul>
+		<ul>
 			
-        	<li><a href="index.jsp">首頁</a></li>
-			<li><a href="register.jsp">註冊</a></li>
-			<li><a href="login.jsp">登入</a></li>
+        	<li><a href="#">首頁</a></li>
+			<li><a href="#">註冊</a></li>
+			<li><a href="#">登入</a></li>
 		</ul>
-    <img src="images/icon2.png" alt="" width="235" height="84" /></div>
+        <img src="images/icon2.png" alt="" width="227" height="86" /></div>
+	</div>
 	<!-- end #menu -->
+	
 	<!-- 內容：三欄式呈現 -->
-		<div class="row">
+	<div class="row">
         <div class="column1">
             <!-- 第1欄內容 -->
             <div id="sidebar">
 		     		  <ul>
 				<div id="category" align="center"><b>分類</b></div>
-				<br>         
-                <%
+                <br />
+                   <%
 			Connection con = null;
 			{
 
 				try {
 					String JDriver = "net.ucanaccess.jdbc.UcanaccessDriver";							
 					Class.forName(JDriver);
-
-					String url = "jdbc:ucanaccess://D:/EATPROJECT/eatingproject/WebContent/Food.accdb";
-
-					String url = "jdbc:ucanaccess://D:/EATPROJECT/eatingproject/WebContent/Food.accdb";
-
+					String url = "jdbc:ucanaccess://C:/Users/NTUNHS/git/eatingProject/WebContent/Food0518.accdb";
 					con = DriverManager.getConnection(url,"","");
-					Statement stmt = con.createStatement();					
+					Statement stmt = con.createStatement();
 					ResultSet rs = stmt.executeQuery("SELECT * FROM Category");
-
-					ResultSet rs2= stmt.executeQuery("SELECT distinct * From Restaurant");
-		            
-
-					
 		
-
 		%>
 		
 				<ul>
@@ -84,7 +76,13 @@ Released   : 20110411
 	<%
 		
 					rs.close();
-					%>
+					stmt.close();
+					/*con.close();*/
+				} catch (Exception ex) {
+					ex.printStackTrace();
+				}
+			}
+		%>
 			</ul>
 		    </div>
 		    <!-- 第1欄內容結束 -->
@@ -92,37 +90,37 @@ Released   : 20110411
         <div class="column2">
             <!-- 第2欄內容 -->
 
-				<h2 class="title"><img src="images/1.png" width="36" height="30">台北熱門美食餐廳</h2>					
+				<h2 class="title">台式料理<h2>
+			
+				<h2>台北市 
+				<select id=type name="type" onchange="updateData(this)">
+			      <option value="">請選擇</option>
+			      <option value="1">萬華區</option>
+			      <option value="0">中正區</option>
+			      <option value="2">北投區</option>
+			      <option value="3">士林區</option>
+			      <option value="4">內湖區</option>
+			      <option value="5">中山區</option>
+			      <option value="6">松山區</option>
+			      <option value="7">大同區</option>
+			      <option value="8">大安區</option>
+ 			      <option value="9">信義區</option>
+			      <option value="10">南港區</option>
+			      <option value="10">文山區</option>
+			    </select>
+				</h2>					
 			    
-              <table width="413" height="256" align="center">
-                             
+                   <table width="413" height="256" align="center">
+                   <tr>
+		            <td><img src="images/1.png" width="36" height="30"></td>
+                    <td><img src="images/1.png" width="36" height="30"></td>
+                    <td><img src="images/1.png" width="36" height="30"></td>
+                   </tr>
                   <tr>
-                  <%
-                  int i=0;                  
-                  while (rs2.next() && i<3) {
-                  %>
-		             <td><%=rs2.getString("RestName")%></td>
-                  <%
-                  i=i+1;
-                  }
-                  
-                 
-                  %> 
+			        <td>文字</td>
+                    <td>文字</td>
+                    <td>文字</td>
                   </tr>
-             
-                  <tr>
-                      <%
-                  int j=1;                 
-                  while (rs2.next()) {                     
-                	 if (j>=3){%>                  
-		                 <td><%=rs2.getString("RestName")%></td>
-		             <%} 
-                     j=i+1;
-                  }
-                   rs2.close();				                  
-                  %>               
-                  </tr>
-                  
                   <tr>
                     <td><img src="images/1.png" width="36" height="30"></td>
                     <td><img src="images/1.png" width="36" height="30"></td>
@@ -130,14 +128,49 @@ Released   : 20110411
                   </tr>
                   <tr>
   			        <td>文字</td>
-  			        <td>文字</td>
-  			        <td>文字</td>
+                    <td>文字</td>
+                    <td>文字</td>
                     <td>更多</td>
                   </tr>
-              
-                </table>
-                <table width="413" height="256" align="center">
-	            <h2 class="title"><a href="#"><img src="images/1.png" alt="" width="36" height="30" />新北熱門美食餐廳</a></h2>
+                 </table>
+                
+                                
+                  <h2 class="title">新北市
+				<select id=type name="type" onchange="updateData(this)">
+			      <option value="">請選擇</option>
+			      <option value="1">板橋區</option>
+			      <option value="0">新莊區</option>
+			      <option value="2">三重區</option>
+			      <option value="3">泰山區</option>
+			      <option value="4">五股區</option>
+			      <option value="5">蘆洲區</option>
+			      <option value="6">林口區</option>
+			      <option value="7">八里區</option>
+			      <option value="8">淡水區</option>
+			      <option value="9">三芝區</option>
+			      <option value="10">石門區</option>
+			      <option value="11">金山區</option>
+			      <option value="12">萬里區</option>
+			      <option value="13">汐止區</option>
+			      <option value="14">平溪區</option>
+			      <option value="15">瑞芳區</option>
+			      <option value="16">貢寮區</option>
+			      <option value="17">雙溪區</option>
+			      <option value="18">坪林區</option>
+			      <option value="19">石碇區</option>
+			      <option value="20">烏來區</option>
+			      <option value="21">新店區</option>
+			      <option value="22">深坑區</option>
+			      <option value="23">三峽區</option>
+			      <option value="24">土城區</option>
+			      <option value="25">中和區</option>
+			      <option value="26">永和區</option>
+			      <option value="27">樹林區</option>
+			      <option value="28">鶯歌區</option>
+			    </select>
+				</h2>
+				
+				 <table width="413" height="256" align="center">
                  <tr>
 		   	       <td><img src="images/1.png" width="36" height="30"></td>
                    <td><img src="images/1.png" width="36" height="30"></td>
@@ -159,7 +192,6 @@ Released   : 20110411
                    <td>文字</td>
                    <td>更多</td>
                  </tr>
-                  
                    </table>      
 
 	     </div>
@@ -181,17 +213,12 @@ Released   : 20110411
         </div>
     </div>
     </div>
-  
-	<%			con.close();
-				} catch (Exception ex) {
-					ex.printStackTrace();
-				}
-			}
-		%>
     <!-- 內容：三欄式呈現結束 -->
+    
+    <p align="right"><a href="QA.jsp">問題回報</a></p>
 	
 	<div id="footer">
-	  <p>&copy; Untitled. All rights reserved. Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.	</p>
+		  <p>&copy; Untitled. All rights reserved. Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.	</p>
 	</div>
 	<!-- end #footer -->
 </body>

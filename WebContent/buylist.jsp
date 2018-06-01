@@ -84,44 +84,59 @@ Released   : 20110411
                  </tr>
                  </table>
                  <table border="1" align="center">
-                 　				<tr>
-					<td colspan="8" style="background-color:#FF9D40">已建立的團購紀錄</td>
-				</tr>
-　				<tr style="background-color:#FFDDAA" align="center">
-　					<td>團長單號</td>
-　					<td>團長名稱</td>
- 					<td>地區</td>
-			 		<td>分類</td>
- 					<td>餐廳名稱</td>
-		 			<td>截止時間</td>
- 					<td>建立時間</td>
+　				<tr style="background-color:#FFAD40" align="center">
+　					<td>暱稱</td>
+　					<td>總金額</td>
+ 					<td>是否付款</td>
+			 		<td>品名</td>
+ 					<td>金額</td>
+		 			<td>數量</td>
+ 					<td>備註</td>
 　				</tr>
  　				<tr style="background-color:#FFDDAA" align="center">
-		 			<td>123456</td>
- 					<td>王小明</td>
- 					<td>台北市萬華區</td>
- 					<td>臺式料理</td>
- 					<td>XXXX</td>
- 					<td>2018/06/01 08:00</td>
- 					<td>2018/06/01 08:00</td>
+		 			<td>哈哈</td>
+ 					<td>150</td>
+ 					<td>否</td>
+ 					<td>XXX</td>
+ 					<td>50</td>
+ 					<td>3</td>
+ 					<td>XXX</td>
  				</tr>
   　				<tr style="background-color:#FFDDAA" align="center">
- 					<td>123456</td>
- 					<td>王小明</td>
- 					<td>台北市中山區</td>
- 					<td>中式料理</td>
- 					<td>XXXX</td>
- 					<td>2018/06/02 08:00</td>
- 					<td>2018/06/02 08:00</td>
+ 					<td>白白</td>
+ 					<td>60</td>
+ 					<td>否</td>
+ 					<td>XXX</td>
+ 					<td>30</td>
+ 					<td>2</td>
+ 					<td>XXX</td>
  				</tr>
  				<tr style="background-color:#FFDDAA" align="center">
- 					<td>123456</td>
- 					<td>王小明</td>
- 					<td>台北市信義區</td>
- 					<td>下午茶</td>
- 					<td>XXXX</td>
- 					<td>2018/06/03 08:00</td>
- 					<td>2018/06/03 08:00</td>
+ 					<td>黑黑</td>
+ 					<td>175</td>
+ 					<td>否</td>
+ 					<td>XXX</td>
+ 					<td>35</td>
+ 					<td>5</td>
+ 					<td>XXX</td>
+ 				</tr>
+ 				<tr style="background-color:#FFDDAA" align="center">
+ 					<td>紅紅</td>
+ 					<td>100</td>
+ 					<td>否</td>
+ 					<td>XXX</td>
+ 					<td>25</td>
+ 					<td>4</td>
+ 					<td>XXX</td>
+ 				</tr>
+ 				<tr style="background-color:#FFDDAA" align="center">
+ 					<td>灰灰</td>
+ 					<td>30</td>
+ 					<td>否</td>
+ 					<td>XXX</td>
+ 					<td>30</td>
+ 					<td>1</td>
+ 					<td>XXX</td>
  				</tr>
                 </table>
                  
