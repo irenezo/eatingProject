@@ -60,28 +60,28 @@
                         <td>$價錢</td>
                         <td>X</td>
                         <!-- 計算數量的按鈕 -->
-                        <td><input type="text" value="1" id="text"></id>
+                        <td><input type="text" value=1 id="quantity">
                         <input type="button" id="bt1" value="+1"/>
                         <input type="button" id="bt2" value="-1"/></td>
-                        <script>
-                        var oText = document.getElementById("text");
-                        var oBt1 = document.getElementById("bt1");
-                        var oBt2 = document.getElementById("bt2");
-                        var index = 1;
- 						//+1操作
-                        oBt1.onclick = function(){
-                        	index = index + 1;
-                        	//alert(index);
-                        	oText.value = index;
-
-                        }
- 						//-1操作
- 						oBt2.onclick = function(){
-                        	index = index - 1;
-                        	//alert(index);
-							oText.value = index;
-                        	
-                        }
+	                    <script>	                        
+	                        var oText = document.getElementById("quantity");	                       
+	                        var oBt1 = document.getElementById("bt1");
+	                        var oBt2 = document.getElementById("bt2");
+	                        //var index = 1;
+	 						//+1操作
+	                        oBt1.onclick = function(){
+	                        	 //alert(oText.value);
+	                        	//index = index + 1;
+	                        	//alert(index);	                        	
+	                        	oText.value = parseInt(oText.value)+1; 
+	                        }
+	 						//-1操作
+	 						oBt2.onclick = function(){
+	                        	//index = index - 1;
+	                        	//alert(index);
+	 							oText.value = parseInt(oText.value)-1; 
+	                        	
+	                        }
                         </script>              
                      </tr>
                      <tr>
