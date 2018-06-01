@@ -128,10 +128,52 @@ Released   : 20110411
                    <tr><td width="172"><img src="images/star.png" alt="" width="100" height="100" /></td></tr>
                    <tr><td >文字 文字 文字 文字 文字 文字 文字 </td></tr>               
                </table>    
+               
             <!-- 第3欄內容結束 -->
         </div>
     </div>
     </div>
+<table border="1" align="center">
+　<tr>
+　<td colspan="8" style="background-color:#FF9D40">已建立的團購紀錄</td>
+　</tr>
+　<tr style="background-color:#FFDDAA" align="center">
+　<td>團長單號</td>
+　<td>團長名稱</td>
+ <td>地區</td>
+ <td>分類</td>
+ <td>餐廳名稱</td>
+ <td>截止時間</td>
+ <td>建立時間</td>
+　</tr>
+ 　<tr style="background-color:#FFDDAA" align="center">
+ <td>123456</td>
+ <td>王小明</td>
+ <td>台北市萬華區</td>
+ <td>臺式料理</td>
+ <td>XXXX</td>
+ <td>2018/06/01 08:00</td>
+ <td>2018/06/01 08:00</td>
+ </tr>
+  　<tr style="background-color:#FFDDAA" align="center">
+ <td>123456</td>
+ <td>王小明</td>
+ <td>台北市中山區</td>
+ <td>中式料理</td>
+ <td>XXXX</td>
+ <td>2018/06/02 08:00</td>
+ <td>2018/06/02 08:00</td>
+ </tr>
+  　<tr style="background-color:#FFDDAA" align="center">
+ <td>123456</td>
+ <td>王小明</td>
+ <td>台北市信義區</td>
+ <td>下午茶</td>
+ <td>XXXX</td>
+ <td>2018/06/03 08:00</td>
+ <td>2018/06/03 08:00</td>
+ </tr>
+</table>
     <!-- 內容：三欄式呈現結束 -->
 	<div id="footer">
 	  <p>&copy; Untitled. All rights reserved. Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
