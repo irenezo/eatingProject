@@ -90,7 +90,7 @@ Released   : 20110411
         <div class="column2">
             <!-- 第2欄內容 -->
 
-				<h2 class="title"><img src="images/1.png" width="36" height="30">台北熱門美食餐廳</h2>					
+				<h2 class="title"><img src="images/1.png" width="36" height="30">台北X熱門美食餐廳</h2>					
 			    
               <table width="413" height="256" align="center">
                              
