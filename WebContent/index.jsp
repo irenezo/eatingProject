@@ -59,16 +59,13 @@ Released   : 20110411
 					String JDriver = "net.ucanaccess.jdbc.UcanaccessDriver";							
 					Class.forName(JDriver);
 
-					String url = "jdbc:ucanaccess://D:/EATPROJECT/eatingproject/WebContent/Food.accdb";
-
-					String url = "jdbc:ucanaccess://D:/EATPROJECT/eatingproject/WebContent/Food.accdb";
+					String url = "jdbc:ucanaccess://D:/EATPROJECT/eatingproject/WebContent/Food0601.accdb;
 
 					con = DriverManager.getConnection(url,"","");
 					Statement stmt = con.createStatement();					
 					ResultSet rs = stmt.executeQuery("SELECT * FROM Category");
-
+					ResultSet rs1= stmt.executeQuery("SELECT distinct * From Restaurant");
 					ResultSet rs2= stmt.executeQuery("SELECT distinct * From Restaurant");
-		            
 
 					
 		
@@ -99,9 +96,9 @@ Released   : 20110411
                   <tr>
                   <%
                   int i=0;                  
-                  while (rs2.next() && i<3) {
+                  while (rs1.next() && i<3) {
                   %>
-		             <td><%=rs2.getString("RestName")%></td>
+		             <td><%=rs1.getString("RestName")%></td>
                   <%
                   i=i+1;
                   }
@@ -111,28 +108,43 @@ Released   : 20110411
                   </tr>
              
                   <tr>
-                      <%
-                  int j=1;                 
-                  while (rs2.next()) {                     
-                	 if (j>=3){%>                  
-		                 <td><%=rs2.getString("RestName")%></td>
-		             <%} 
-                     j=i+1;
+                  <%
+                  int j=0;                 
+                  while (rs2.next() && j<3) {                     
+                  %>                  
+		             <td><%=rs2.getString("RestName")%></td>
+		          <%
+                     j=j+1;
                   }
-                   rs2.close();				                  
+                  			                  
                   %>               
                   </tr>
                   
-                  <tr>
-                    <td><img src="images/1.png" width="36" height="30"></td>
-                    <td><img src="images/1.png" width="36" height="30"></td>
-                    <td><img src="images/1.png" width="36" height="30"></td>                
+                   <tr>
+                  <%
+                  int k=0;                  
+                  while (rs1.next() && k<3) {
+                  %>
+		             <td><%=rs1.getString("RestName")%></td>
+                  <%
+                  k=k+1;
+                  }
+                  
+                  rs1.close();
+                  %> 
                   </tr>
+             
                   <tr>
-  			        <td>文字</td>
-  			        <td>文字</td>
-  			        <td>文字</td>
-                    <td>更多</td>
+                  <%
+                  int l=0;                 
+                  while (rs2.next() && l<3) {                     
+                  %>                  
+		             <td><%=rs2.getString("RestName")%></td>
+		          <%
+                     l=l+1;
+                  }
+                  rs2.close();		                  
+                  %>               
                   </tr>
               
                 </table>

@@ -6,10 +6,13 @@
   
 
 <%
-   String account=request.getParameter("account");
-   String psw=request.getParameter("psw");
-   String uname=request.getParameter("uname");
+   String MemberID=request.getParameter("MemberID");
+   String Password=request.getParameter("Password");
+   String UserName=request.getParameter("UserName");
    String Email=request.getParameter("Email"); 
+   String PreferOne=request.getParameter("PreferOne");
+   String PreferTwo=request.getParameter("PreferTwo");
+   String PreferThree=request.getParameter("PreferThree");
    
 
 			Connection con = null;
@@ -17,10 +20,10 @@
 				try {
 					String JDriver = "net.ucanaccess.jdbc.UcanaccessDriver";							
 					Class.forName(JDriver);
-					String url = "jdbc:ucanaccess://C:/Users/NTUNHS/git/eatingProject/WebContent/Food0518.accdb";
+					String url = "jdbc:ucanaccess://C:/Users/NTUNHS/git/eatingProject/WebContent/Food.accdb";
 					con = DriverManager.getConnection(url,"","");
 					Statement stmt = con.createStatement();
-					stmt.executeUpdate("INSERT INTO MemberData(account,psw,uname,Email) VALUES ('"+account+"', '"+psw+"', '"+uname+"', '"+Email+"')");
+					stmt.executeUpdate("INSERT INTO MemberData(MemberID,Password,UserName,Email,PreferOne,PreferTwo,PreferThree) VALUES ('"+MemberID+"', '"+Password+"', '"+UserName+"', '"+Email+"','"+PreferOne+"','"+PreferTwo+"','"+PreferThree+"')");
 					
 					stmt.close();
 					con.close();
@@ -29,7 +32,7 @@
 				}
 			}
 			
-			 response.sendRedirect("welcome.jsp?uname="+uname);
+			 response.sendRedirect("welcome.jsp?UserName="+UserName);
 
 		
 		%>

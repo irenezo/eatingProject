@@ -45,9 +45,9 @@
 
 				<div class="post" style="background-color:#99FF99">
 				 <%
-session.setAttribute("uname",request.getParameter("uname"));
+session.setAttribute("UserName",request.getParameter("UserName"));
 	      //#logout
-	      //session.setAttribute("uname","");
+	      //session.setAttribute("UserName","");
 	      //response.sendRedirect("login.jsp");
 
 out.println("您好，已完成註冊");

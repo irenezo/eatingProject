@@ -43,10 +43,10 @@
 						
 			  <div class="entry" style="background-color:#FFDDAA">
               
-                <form action="" method="get">
+                <form action="index.jsp" method="get">
 <br>         
-帳號：&nbsp&nbsp&nbsp<input type= "text" name="account"  pattern="[A-Za-z0-9]{1,10}" maxlength="10" required><br><br>
-密碼：&nbsp&nbsp&nbsp<input type="password" name="psw" pattern="[A-Za-z0-9]{1,12}" maxlength="12" required><br><br>
+帳號：<input type= "text" name="account" pattern="[A-Za-z0-9]{1,10}" maxlength="10" required><br><br>
+密碼：<input type="password" name="psw" required><br><br>
 <br><br>
 <input type="submit" value="送出" style="background-color:lightgreen;">
 <input type="reset" value="忘記密碼" style="background-color:lightgreen;">

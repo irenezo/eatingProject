@@ -55,9 +55,14 @@ Released   : 20110411
 				<div id="category" align="center"><b>會員管理</b></div>
                 <br />
                 <li>
-					<h2 align="center">帳號管理</h2>
+					<h2 align="center"><a href="AcountMangement.jsp">帳號管理</h2>
 				</li>
-                
+                <li>
+					<h2 align="center">建立團購</h2>
+				</li>
+				<li>
+					<h2 align="center">團購清單</h2>
+				</li>
 				<li>
 					<h2 align="center">問題回報</h2>
 				</li>
@@ -83,7 +88,7 @@ Released   : 20110411
 			       <td>Email：<input type="text" name="name"></td>
                  </tr>
                  <tr>
-                   <td>偏好店家：</td>
+                   <td>我的最愛：</td>
                  <tr> 
                    <td><table>123</table></td></tr>
 			     <tr>
