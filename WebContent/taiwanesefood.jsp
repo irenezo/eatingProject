@@ -41,7 +41,7 @@ Released   : 20110411
 			<li><a href="#">註冊</a></li>
 			<li><a href="#">登入</a></li>
 		</ul>
-        <img src="images/icon2.png" alt="" width="227" height="86" /></div>
+        <a href="index.jsp"><img src="images/icon2.png" alt="" width="227" height="86" /></a></div>
 	</div>
 	<!-- end #menu -->
 	

@@ -26,7 +26,7 @@
 			<li><a href="#">註冊</a></li>
 			<li><a href="#">登入</a></li>
 	  </ul>
-      <img src="images/icon2.png" alt="" width="235" height="84" />
+      <a href="index.jsp"><img src="images/icon2.png" alt="index.jsp" width="235" height="84" /></a>
     </div>
 	<!-- end #menu -->
 	<!-- 內容：三欄式呈現 -->

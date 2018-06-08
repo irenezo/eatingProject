@@ -41,7 +41,7 @@ Released   : 20110411
 			<li><a href="register.jsp">註冊</a></li>
 			<li><a href="login.jsp">登入</a></li>
 		</ul>
-    <img src="images/icon2.png" alt="" width="235" height="84" /></div>
+    <a href="index.jsp"><img src="images/icon2.png" alt="index.jsp" width="235" height="84" /></a></div>
 	<!-- end #menu -->
 	<!-- 內容：三欄式呈現 -->
 		<div class="row">
