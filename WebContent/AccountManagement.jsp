@@ -35,8 +35,9 @@ Released   : 20110411
 		<ul>
 			
         	<li><a href="#">首頁</a></li>
-			<li><a href="#">註冊</a></li>
-			<li><a href="#">登入</a></li>
+			<li><a href="register.jsp">註冊</a></li>
+			<li><a href="login.jsp">登入</a></li>
+			<li><a href="AccountManagement.jsp">會員管理</a></li>
 		</ul>
         <img src="images/icon2.png" alt="" width="227" height="86" /></div>
 	</div>
