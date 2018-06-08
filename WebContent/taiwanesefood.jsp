@@ -37,7 +37,7 @@ Released   : 20110411
     
 		<ul>
 			
-        	<li><a href="#">首頁</a></li>
+        	<li><a href="index.jsp">首頁</a></li>
 			<li><a href="#">註冊</a></li>
 			<li><a href="#">登入</a></li>
 		</ul>
@@ -60,26 +60,22 @@ Released   : 20110411
 				try {
 					String JDriver = "net.ucanaccess.jdbc.UcanaccessDriver";							
 					Class.forName(JDriver);
-					String url = "jdbc:ucanaccess://C:/Users/NTUNHS/git/eatingProject/WebContent/Food.accdb";
+					String url = "jdbc:ucanaccess://D:/EATPROJECT/eatingproject/WebContent/Food0601.accdb";
 					con = DriverManager.getConnection(url,"","");
 					Statement stmt = con.createStatement();					
 					ResultSet rs = stmt.executeQuery("SELECT * FROM Category");
+					ResultSet rs_CategoryName = stmt.executeQuery("SELECT * FROM Category where CategoryID='"+request.getParameter("id")+"'");
 					ResultSet rs1= stmt.executeQuery("SELECT distinct * From Restaurant");
-					ResultSet rs2= stmt.executeQuery("SELECT distinct * From Restaurant");
+					ResultSet rs2= stmt.executeQuery("SELECT distinct * From Restaurant where Category='"+request.getParameter("id")+"'");
 					
 		%>
 		
 				<ul>
 				<%while (rs.next()) {%>
 					<li><a href="taiwanesefood.jsp?id=<%=rs.getString("CategoryID")%>"><span style="font-size:25px;"><%=rs.getString("CategoryName")%></span></a></li>					
-				<%}%>
+				<%}
+				rs.close();%>
 				</ul>
-				
-			<%	
-			
-			rs.close();
-			
-			%>
 	
 			</ul>
 		    </div>
@@ -89,7 +85,9 @@ Released   : 20110411
             <!-- 第2欄內容 -->
 
 				<h2 class="title">		
-				台式料理
+				<%while (rs_CategoryName.next()) {%>
+				<%=rs_CategoryName.getString("CategoryName")%>
+				<%}%>
 				</h2>
 			
 				<h2>台北市 
