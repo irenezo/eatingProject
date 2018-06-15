@@ -50,16 +50,14 @@
               
                 <form action="register_process.jsp" method="get">
 <br>         
-帳號：&nbsp&nbsp&nbsp<input type= "text" name="account"  pattern="[A-Za-z0-9]{1,10}" maxlength="10" required>不可超過10碼<br><br>
-密碼：&nbsp&nbsp&nbsp<input type="password" name="psw" required><br><br>
-姓名：&nbsp&nbsp&nbsp<input type="text" name="uname" required><br><br>			   
+帳號：<input type= "text" name="account"  pattern="[A-Za-z0-9]{1,10}" maxlength="10" required>不可超過10碼<br><br>
+密碼：<input type="password" name="psw" required><br><br>
+姓名：<input type="text" name="uname" required><br><br>			   
 E-mail：<input type="email" name="Email" required>XXX@XXX<br><br>
-偏好：<input type="text" name="PreferOne" required><br><br>	
-<input type="text" name="PreferTwo" required><br><br>	
-<input type="text" name="PreferThree" required>
+
 <br><br>
-<input type="submit" value="送出" style="background-color:lightgreen;">
-<input type="reset" value="重填" style="background-color:lightgreen;">
+<input type="submit" value="送出">
+<input type="reset" value="重填">
  			</form>
                   
 					
