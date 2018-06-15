@@ -37,6 +37,8 @@
        </div>
         <div class="column2">
             <!-- 第2欄內容 -->
+
+  			<h3>吃什麼啦齁！</h3>
             	<!-- 載入轉盤東西 -->
             	<link rel="stylesheet" href="css/style.css" type="text/css" />
 				<script type="text/javascript" src="js/jquery.min.js"></script>

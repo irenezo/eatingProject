@@ -50,7 +50,7 @@ session.setAttribute("UserName",request.getParameter("UserName"));
 	      //session.setAttribute("UserName","");
 	      //response.sendRedirect("login.jsp");
 
-out.println("您好，已完成註冊");
+out.println("您好，已完成註冊，三秒後返回首頁～");
 		%>
                   
 					
@@ -58,7 +58,17 @@ out.println("您好，已完成註冊");
 			</div>
 
 	     </div>
+		<!-- 幾秒後返回首頁 -->
+		<script language="Javascript">
+		var speed = 3000;
+		setTimeout("goto()", speed);
 
+
+		function goto() {
+    	location = "index.jsp";
+		}
+
+</script>
             <!-- 第2欄內容結束 -->
 
       
