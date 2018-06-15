@@ -10,7 +10,7 @@
    String Password=request.getParameter("Password");
    String UserName=request.getParameter("UserName");
    String Email=request.getParameter("Email"); 
-   
+  
    
 
 			Connection con = null;
