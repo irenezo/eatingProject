@@ -50,9 +50,9 @@
               
                 <form action="register_process.jsp" method="get">
 <br>         
-帳號：<input type= "text" name="account"  pattern="[A-Za-z0-9]{1,10}" maxlength="10" required>不可超過10碼<br><br>
-密碼：<input type="password" name="psw" required><br><br>
-姓名：<input type="text" name="uname" required><br><br>			   
+帳號：<input type= "text" name="MemberID"  pattern="[A-Za-z0-9]{1,10}" maxlength="10" required>不可超過10碼<br><br>
+密碼：<input type="password" name="Password" required><br><br>
+姓名：<input type="text" name="UserName" required><br><br>			   
 E-mail：<input type="email" name="Email" required>XXX@XXX<br><br>
 
 <br><br>
