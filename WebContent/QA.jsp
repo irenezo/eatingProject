@@ -70,16 +70,18 @@
 			  <div class="entry" style="background-color:#FFDDAA">
                <table width="300" height="200">
              <tr>
+             <form action="QA_process.jpg" method="get">
 			 <td><font size="5"> 主旨 </font></td>
 			 <td><input type="text" name="major"> </td>
               </tr>   
                 
                 <tr>
 			   <td><font size="5">內容</font></td>
-               <td><input type="text" name="detail"></td>
+               <td><input type="text" name="content"></td>
                 </tr>
                 </table>
                 <button type="button" onclick="document.getElementById('demo').style.display='block'" style="background-color:lightgreen;">傳送</button>
+</form>
 <p id="demo" style="display:none">感謝你的回報</p>
                 
              </div> 
