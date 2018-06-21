@@ -73,27 +73,27 @@ Released   : 20110411
             <!-- 第2欄內容 -->
 
 				<div class="post" style="background-color:#99FF99">
-				<h2 class="title"><a href="#">建立團購</a></h2>
+				<h2 class="title"><a href="#">團購資料確認</a></h2>
 						
 			  <div class="entry" style="background-color:#FFDDAA">
                <table width="300" height="280">
                  <tr>
-			       <td>團購單號：&nbsp<input type="text" name="name"></td>               
+			       <td>團購單號：<label >123</label>               
                  </tr>
                  <tr>
-			       <td>團長名稱：&nbsp<input type="text" name="name"></td>               
+			       <td>團長名稱：：<label >123</label>               
                  </tr>
 				 <tr>
-			       <td>地區：&nbsp<input type="text" name="name"></td>
+			       <td>地區：：<label >123</label></td>
                  </tr>
                  <tr>
-			       <td>分類：&nbsp<input type="text" name="name"></td>
+			       <td>分類：：<label >123</label></td>
                  </tr>
                  <tr>
-			       <td>餐廳名稱：&nbsp<input type="text" name="name"></td>
+			       <td>餐廳名稱：：<label >123</label></td>
                  </tr>
                  <tr>
-			       <td>建立日期：&nbsp<input type="text" name="name"></td>
+			       <td>建立日期：：<label >123</label></td>
                  </tr>
                 </table>
                 
