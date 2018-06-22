@@ -83,35 +83,35 @@
 						switch (item) {
 							case 0:
 								//var angle = [26, 88, 137, 185, 235, 287, 337];
-								rotateFn(0, 337, '未中奖');
+								rotateFn(0, 337, '港式料理');
 								break;
 							case 1:
 								//var angle = [88, 137, 185, 235, 287];
-								rotateFn(1, 26, '免单4999元');
+								rotateFn(1, 26, '中式料理');
 								break;
 							case 2:
 								//var angle = [137, 185, 235, 287];
-								rotateFn(2, 88, '免单50元');
+								rotateFn(2, 88, '西式料理');
 								break;
 							case 3:
 								//var angle = [137, 185, 235, 287];
-								rotateFn(3, 137, '免单10元');
+								rotateFn(3, 137, '美式料理');
 								break;
 							case 4:
 								//var angle = [185, 235, 287];
-								rotateFn(4, 185, '免单5元');
+								rotateFn(4, 185, '台式料理');
 								break;
 							case 5:
 								//var angle = [185, 235, 287];
-								rotateFn(5, 185, '免单5元');
+								rotateFn(5, 185, '台式料理');
 								break;
 							case 6:
 								//var angle = [235, 287];
-								rotateFn(6, 235, '免分期服务费');
+								rotateFn(6, 235, '韓式料理');
 								break;
 							case 7:
 								//var angle = [287];
-								rotateFn(7, 287, '提高白条额度');
+								rotateFn(7, 287, '意式料理');
 								break;
 						}
 
@@ -124,7 +124,7 @@
 				</script>
 				<div class="turntable-bg"> 
   				<div class="pointer"><img src="images/pointer.png" alt="pointer"/></div>
-  				<div class="rotate" ><img id="rotate" src="images/turntable.png" alt="turntable"/></div>
+  				<div class="rotate" ><img id="rotate" src="images/turntable3.png" alt="turntable"/></div>
 				</div>
 				<div style="display:none">
 				<script type="text/javascript">

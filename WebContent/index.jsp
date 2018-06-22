@@ -59,7 +59,7 @@ Released   : 20110411
 					String JDriver = "net.ucanaccess.jdbc.UcanaccessDriver";							
 					Class.forName(JDriver);
 
-					String url = "jdbc:ucanaccess://D:/EATPROJECT/eatingproject/WebContent/Food0602.accdb";
+					String url = "jdbc:ucanaccess://D:/EATPROJECT/eatingproject/WebContent/Food06022.accdb";
 
 					con = DriverManager.getConnection(url,"","");
 					Statement stmt = con.createStatement();					
@@ -178,8 +178,8 @@ Released   : 20110411
         <div class="column3">
             <!-- 第3欄內容 -->
             	<div style="clear: both;" align="center">             
-					<h2><b>今天吃什麼?</b><br/></h2>
-                <img src="images/circle.png" alt="" width="100" height="100" /><br />
+					<h2><b>想不到今天吃什麼嗎?</b><br/></h2><br/>
+                <a href="random.jsp"><img src="images/circle.png" alt="" width="150" height="150" /></a><br />
               
                 <h2><b>輕食區</b><br/></h2>
                 <table>
