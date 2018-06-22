@@ -464,6 +464,12 @@ a:hover {
     clear: both;
 }
 
+<!--轉盤標題-->
+.p{
+    border: 1px solid powderblue;
+    padding: 30px;
+}
+
 <!-- 計算數量的按鈕 -->
 #text{
 	font-size : 10px;	

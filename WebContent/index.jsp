@@ -60,7 +60,7 @@ Released   : 20110411
 					Class.forName(JDriver);
 
 
-					String url = "jdbc:ucanaccess://D:/EATPROJECT/eatingproject/WebContent/Food0622.accdb";
+					String url = "jdbc:ucanaccess://D:/EATPROJECT/eatingproject/WebContent/Food06223.accdb";
 
 
 					con = DriverManager.getConnection(url,"","");
@@ -217,11 +217,17 @@ Released   : 20110411
 					<h2><b>想不到今天吃什麼嗎?</b><br/></h2><br/>
                 <a href="random.jsp"><img src="images/circle.png" alt="" width="150" height="150" /></a><br />
               
-                <h2><b>輕食區</b><br/></h2>
-                <table>
-                   <tr><td width="172" align="center"><img src="images/circle.png" alt="" width="100" height="100" /></td></tr>
-                   <tr><td >文字 文字 文字 文字 文字 文字 文字 </td></tr>               
-               </table>    
+                			<table style="border: 5px double rgb(109, 2, 107); height: 300px; background-color: rgb(255, 255, 255); width: 150px;" align="center" cellpadding="5" cellspacing="10" frame="border" rules="all">
+    			<br></br><caption><h3>輕食區</h3></caption>
+   				<tbody>
+     			<tr>
+      			<td>XX套餐</td>
+      			</tr>
+      			<tr>
+      			<td>總計</td>
+      			</tr>
+   				</tbody>
+ 				</table>            
             <!-- 第3欄內容結束 -->
         </div>
     </div>

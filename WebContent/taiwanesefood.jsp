@@ -38,8 +38,8 @@ Released   : 20110411
 		<ul>
 			
         	<li><a href="index.jsp">首頁</a></li>
-			<li><a href="#">註冊</a></li>
-			<li><a href="#">登入</a></li>
+			<li><a href="register.jsp">註冊</a></li>
+			<li><a href="login.jsp">登入</a></li>
 		</ul>
         <a href="index.jsp"><img src="images/icon2.png" alt="" width="227" height="86" /></a></div>
 	</div>
@@ -60,7 +60,7 @@ Released   : 20110411
 				try {
 					String JDriver = "net.ucanaccess.jdbc.UcanaccessDriver";							
 					Class.forName(JDriver);
-					String url = "jdbc:ucanaccess://D:/eatingProject/WebContent/Food0602.accdb";
+					String url = "jdbc:ucanaccess://D:/EATPROJECT/eatingProject/WebContent/Food06223.accdb";
 					con = DriverManager.getConnection(url,"","");
 					Statement stmt = con.createStatement();					
 					ResultSet rs = stmt.executeQuery("SELECT * FROM Category");
@@ -90,7 +90,7 @@ Released   : 20110411
 				<%}%>
 				</h2>
 			
-				<h2>台北市 
+				<h2>台北市</br> 
 				<select id=type name="type" onchange="updateData(this)">
 			      <option value="">請選擇</option>
 			      <option value="1">萬華區</option>

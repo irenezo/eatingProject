@@ -38,7 +38,7 @@
         <div class="column2">
             <!-- 第2欄內容 -->
 
-  			<h3>吃什麼啦齁！</h3>
+  			<div class="p">吃什麼啦齁！</div></br>
             	<!-- 載入轉盤東西 -->
             	<link rel="stylesheet" href="css/style.css" type="text/css" />
 				<script type="text/javascript" src="js/jquery.min.js"></script>
@@ -55,7 +55,7 @@
 							animateTo:2160,
 							duration:8000,
 							callback:function (){
-								alert('网络超时，请检查您的网络设置！');
+								alert('網路超時，請檢查網路！');
 							}
 						});
 					};
