@@ -60,13 +60,13 @@ Released   : 20110411
 				try {
 					String JDriver = "net.ucanaccess.jdbc.UcanaccessDriver";							
 					Class.forName(JDriver);
-					String url = "jdbc:ucanaccess://D:/EATPROJECT/eatingproject/WebContent/Food0602.accdb";
+					String url = "jdbc:ucanaccess://D:/eatingProject/WebContent/Food0602.accdb";
 					con = DriverManager.getConnection(url,"","");
 					Statement stmt = con.createStatement();					
 					ResultSet rs = stmt.executeQuery("SELECT * FROM Category");
 					ResultSet rs_CategoryName = stmt.executeQuery("SELECT * FROM Category where CategoryID='"+request.getParameter("id")+"'");
 					ResultSet rs1= stmt.executeQuery("SELECT distinct * From Restaurant");
-					ResultSet rs2= stmt.executeQuery("SELECT distinct * From Restaurant where Category='"+request.getParameter("id")+"'");
+					ResultSet rs2= stmt.executeQuery("SELECT distinct * From Restaurant");
 					
 		%>
 		
@@ -145,8 +145,7 @@ Released   : 20110411
                   <%
                   k=k+1;
                   }
-                  
-                  rs1.close();
+                                   
                   %> 
                   </tr>
              
@@ -159,7 +158,7 @@ Released   : 20110411
 		          <%
                      l=l+1;
                   }
-                  rs2.close();		                  
+                  		                  
                   %>               
                   </tr>
                  </table>
@@ -202,25 +201,56 @@ Released   : 20110411
 				
 				 <table width="413" height="256" align="center">
                  <tr>
-		   	       <td><img src="images/1.png" width="36" height="30"></td>
-                   <td><img src="images/1.png" width="36" height="30"></td>
-                   <td><img src="images/1.png" width="36" height="30"></td>
-                 </tr>
-                 <tr>
-			       <td>文字</td>
-                   <td>文字</td>
-                   <td>文字</td>
-                 </tr>               
-                 <tr>
-                   <td><img src="images/1.png" width="36" height="30"></td>
-                   <td><img src="images/1.png" width="36" height="30"></td>
-                   <td><img src="images/1.png" width="36" height="30"></td>                
-                 </tr>
-                 <tr>
-			       <td>文字</td>
-                   <td>文字</td>
-                   <td>文字</td>
-                   <td>更多</td>
+		   	       <%
+                  int m=0;                  
+                  while (rs1.next() && m<3) {
+                  %>
+		             <td><%=rs1.getString("RestName")%></td>
+                  <%
+                  m=m+1;
+                  }
+                                
+                  %> 
+                  </tr>
+             
+                  <tr>
+                  <%
+                  int n=0;                 
+                  while (rs2.next() && n<3) {                     
+                  %>                  
+		             <td><%=rs2.getString("RestName")%></td>
+		          <%
+                     n=n+1;
+                  }
+                  			                  
+                  %>               
+                  </tr>
+                  
+                   <tr>
+                  <%
+                  int o=0;                  
+                  while (rs1.next() && o<3) {
+                  %>
+		             <td><%=rs1.getString("RestName")%></td>
+                  <%
+                  o=o+1;
+                  }
+                  
+                  rs1.close();
+                  %> 
+                  </tr>
+             
+                  <tr>
+                  <%
+                  int p=0;                 
+                  while (rs2.next() && p<3) {                     
+                  %>                  
+		             <td><%=rs2.getString("RestName")%></td>
+		          <%
+                     p=p+1;
+                  }
+                  rs2.close();		                  
+                  %>               
                  </tr>
                    </table>      
 

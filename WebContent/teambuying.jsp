@@ -76,9 +76,11 @@ Released   : 20110411
 				<h2 class="title"><a href="#">建立團購</a></h2>
 						
 			  <div class="entry" style="background-color:#FFDDAA">
+               <form action="teambuying_process.jpg">
                <table width="300" height="280">
                  <tr>
-			       <td>團長名稱：&nbsp<input type="text" name="name"></td>               
+                
+			       <td>團長名稱：<input type="text" name="name"></td>               
                  </tr>
                  <tr>
 			       <td>地區：
@@ -133,7 +135,7 @@ Released   : 20110411
 			     </tr>
                 
                 </table>
-                
+                 </form>
                 <input type="submit"  value="建立" align="right" style="background-color:lightgreen;">
                 
                 </div>
