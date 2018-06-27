@@ -76,29 +76,41 @@ Released   : 20110411
 				<h2 class="title"><a href="#">團購資料確認</a></h2>
 						
 			  <div class="entry" style="background-color:#FFDDAA">
+			  
+	<%
+   String name=request.getParameter("name");
+   String county=request.getParameter("county");
+   String area=request.getParameter("area");
+   String category=request.getParameter("category");
+   String restname=request.getParameter("restname"); 
+   String month=request.getParameter("month");
+   String day=request.getParameter("day");
+   String time=request.getParameter("time");
+   %>
+			  
                <table width="300" height="280">
                  <tr>
-			       <td>團購單號：<label >123</label>               
+			       <td>團購單號：<label ><%out.println(name);%></label></td>               
                  </tr>
                  <tr>
-			       <td>團長名稱：：<label >123</label>               
+			       <td>團長名稱：<label ><%out.println(name);%></label></td>               
                  </tr>
 				 <tr>
-			       <td>地區：：<label >123</label></td>
+			       <td>地區：<label><%out.println(county);%><%out.println(area);%></label></td>
+			     </tr>
+                 <tr>
+			       <td>分類：<label ><%out.println(category);%></label></td>
                  </tr>
                  <tr>
-			       <td>分類：：<label >123</label></td>
+			       <td>餐廳名稱：<label ><%out.println(restname);%></label></td>
                  </tr>
                  <tr>
-			       <td>餐廳名稱：：<label >123</label></td>
-                 </tr>
-                 <tr>
-			       <td>建立日期：：<label >123</label></td>
+			       <td>建立日期：<label ><%out.println(month);%><%out.println(day);%><%out.println(time);%></label></td>
                  </tr>
                 </table>
                 
                 <input type="submit"  value="建立" style="background-color:lightgreen;">
-                
+               
                 </div>
 </div>
             <!-- 第2欄內容結束 -->
@@ -106,17 +118,12 @@ Released   : 20110411
         <div class="column3">
             <!-- 第3欄內容 -->
             	<div style="clear: both;" align="center">             
-				<h2><b>加入我的最愛</b><br/></h2>
-                <img src="images/star.png" alt="" width="100" height="100" /><br />
-                <table>
-                   <tr><td width="172"><img src="images/star.png" alt="" width="100" height="100" /></td></tr>
-                   <tr><td >文字 文字 文字 文字 文字 文字 文字 </td></tr>               
-               </table>    
+				
             <!-- 第3欄內容結束 -->
         </div>
     </div>
     </div>
-<<<<<<< HEAD
+
 			<table border="1" align="center">
 　				<tr>
 					<td colspan="8" style="background-color:#FF9D40">已建立的團購紀錄</td>
@@ -158,8 +165,7 @@ Released   : 20110411
  					<td>2018/06/03 08:00</td>
  				</tr>
 			</table>
-=======
->>>>>>> branch 'master' of https://github.com/irenezo/eatingProject.git
+
     <!-- 內容：三欄式呈現結束 -->
 	<div id="footer">
 	  <p>&copy; Untitled. All rights reserved. Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
