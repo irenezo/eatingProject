@@ -43,7 +43,7 @@
 						
 			  <div class="entry" style="background-color:#FFDDAA">
               
-                <form action="index.jsp" method="get">
+                <form action="order.jsp" method="get">
 <br>         
 帳號：<input type= "text" name="account" pattern="[A-Za-z0-9]{1,10}" maxlength="10" required><br><br>
 密碼：<input type="password" name="psw" required><br><br>
