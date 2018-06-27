@@ -13,24 +13,26 @@
   
    
 
-			Connection con = null;
-			{
-				try {
-					String JDriver = "net.ucanaccess.jdbc.UcanaccessDriver";							
-					Class.forName(JDriver);
-					String url = "jdbc:ucanaccess://D:/EATPROJECT/eatingProject/WebContent/Food06223.accdb";
-					con = DriverManager.getConnection(url,"","");
-					Statement stmt = con.createStatement();
-					stmt.executeUpdate("INSERT INTO MemberData(MemberID,Password,UserName,Email) VALUES ('"+MemberID+"', '"+Password+"', '"+UserName+"', '"+Email+"')");
-					
-					stmt.close();
-					con.close();
-				} catch (Exception ex) {
-					ex.printStackTrace();
-				}
-			}
+   Connection con = null;
+	{
+		try {
+			String JDriver = "net.ucanaccess.jdbc.UcanaccessDriver";							
+			Class.forName(JDriver);
+			String url = "jdbc:ucanaccess://C:/Users/NTUNHS/git/eatingProject/WebContent/Food06223.accdb";
+			con = DriverManager.getConnection(url,"","");
+			Statement stmt = con.createStatement();
+			stmt.executeUpdate("INSERT INTO MemberData(MemberID,Password,UserName,Email) VALUES ('"+MemberID+"', '"+Password+"', '"+UserName+"', '"+Email+"')");
 			
-			 response.sendRedirect("welcome.jsp?UserName="+UserName);
+			stmt.close();
+			con.close();
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+	}
+	
+	 response.sendRedirect("welcome.jsp?");
+
+
 
 		
 		%>
