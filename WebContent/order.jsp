@@ -24,7 +24,7 @@
 	  <ul>			
         	<li><a href="index.jsp">首頁</a></li>
 			<li><a href="#">註冊</a></li>
-			<li><a href="#">登入</a></li>
+			<li><a href="logout_process.jsp">登出</a></li>
 	  </ul>
       <a href="index.jsp"><img src="images/icon2.png" alt="index.jsp" width="235" height="84" /></a>
     </div>
