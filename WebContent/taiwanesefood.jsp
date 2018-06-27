@@ -40,6 +40,7 @@ Released   : 20110411
         	<li><a href="index.jsp">首頁</a></li>
 			<li><a href="register.jsp">註冊</a></li>
 			<li><a href="login.jsp">登入</a></li>
+			<li><a href="mailto:jackson09@live.hk">聯絡我們</a></li>
 		</ul>
         <a href="index.jsp"><img src="images/icon2.png" alt="" width="227" height="86" /></a></div>
 	</div>
