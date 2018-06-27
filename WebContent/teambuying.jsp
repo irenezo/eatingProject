@@ -76,7 +76,7 @@ Released   : 20110411
 				<h2 class="title"><a href="#">建立團購</a></h2>
 						
 			  <div class="entry" style="background-color:#FFDDAA">
-               <form action="teambuying_process.jpg">
+               <form action="buycompleted.jsp">
                <table width="300" height="280">
                  <tr>
                 
@@ -84,11 +84,12 @@ Released   : 20110411
                  </tr>
                  <tr>
 			       <td>地區：
-			        	<select>
+			        	<select name="county">
   						<option value="台北市">台北市</option>
  						<option value="新北市">新北市</option>
 						</select>
-						<select>
+						
+						<select name="area">
 						<option value="萬華區">萬華區</option>
 						<option value="中正區">中正區</option>
 						<option value="中山區">中山區</option>
@@ -101,11 +102,12 @@ Released   : 20110411
   						<option value="北投區">北投區</option>
  						<option value="士林區">士林區</option>
  						<option value="文山區">文山區</option>
-						</select>		
+						</select>	
+						</td>	
                  </tr> 
                  <tr>
                    <td>分類：
-                   		<select>
+                   		<select name="category">
   						<option value="台式料理">台式料理</option>
  						<option value="西式料理">西式料理</option>
  						<option value="日式料理">日式料理</option>
@@ -122,21 +124,100 @@ Released   : 20110411
                  </tr>
                  <tr> 
 				   <td>餐廳名稱：
-                   		<select>
+                   		<select name="restname">
   						<option value="XXXX">XXXX</option>
  						<option value="麥當勞">麥當勞</option>
  						<option value="肯德基">肯德基</option>
 						</select>
 					</td>
 				<tr> 
-					<td>截止時間： 
+					<td>截止時間：  
+  <br>
+  月
+	  <select name="month" size="1"> 
+	  <option>1</option> 
+	  <option>2</option> 
+	  <option>3</option> 
+	  <option>4</option> 
+	  <option>5</option> 
+	  <option>6</option> 
+	  <option>7</option> 
+	  <option>8</option> 
+	  <option>9</option> 
+	  <option>10</option> 
+	  <option>11</option> 
+	  <option>12</option> 
+	  </select> 
+	   
+日 
+	  <select name="day" size="1"> 
+	  <option>1</option> 
+	  <option>2</option> 
+	  <option>3</option> 
+	  <option>4</option> 
+	  <option>5</option> 
+	  <option>6</option> 
+	  <option>7</option> 
+	  <option>8</option> 
+	  <option>9</option> 
+	  <option>10</option> 
+	  <option>11</option> 
+	  <option>12</option> 
+	  <option>13</option> 
+	  <option>14</option> 
+	  <option>15</option> 
+	  <option>16</option> 
+	  <option>17</option> 
+	  <option>18</option> 
+	  <option>19</option> 
+	  <option>20</option> 
+	  <option>21</option> 
+	  <option>22</option> 
+	  <option>23</option> 
+	  <option>24</option> 
+	  <option>25</option> 
+	  <option>26</option> 
+	  <option>27</option> 
+	  <option>28</option> 
+	  <option>29</option> 
+	  <option>30</option> 
+	  <option>31</option> 
+	  </select> 
+時間	  
+	  <select name="time" size="1"> 
+	  <option>00:00</option> 
+	  <option>01:00</option> 
+	  <option>02:00</option> 
+	  <option>03:00</option> 
+	  <option>04:00</option>
+	  <option>05:00</option> 
+	  <option>06:00</option> 
+	  <option>07:00</option> 
+	  <option>08:00</option> 
+	  <option>09:00</option> 
+	  <option>10:00</option> 
+	  <option>11:00</option> 
+	  <option>12:00</option> 
+	  <option>13:00</option> 
+	  <option>14:00</option> 
+	  <option>15:00</option> 
+	  <option>16:00</option> 
+	  <option>17:00</option> 
+	  <option>18:00</option> 
+	  <option>19:00</option> 
+	  <option>20:00</option> 
+	  <option>21:00</option> 
+	  <option>22:00</option> 
+	  <option>23:00</option> 
+	  </select> 
 					
 					</td>
 			     </tr>
                 
                 </table>
-                 </form>
                 <input type="submit"  value="建立" align="right" style="background-color:lightgreen;">
+                 </form>
+                
                 
                 </div>
 </div>
@@ -145,12 +226,7 @@ Released   : 20110411
         <div class="column3">
             <!-- 第3欄內容 -->
             	<div style="clear: both;" align="center">             
-				<h2><b>加入我的最愛</b><br/></h2>
-                <img src="images/star.png" alt="" width="100" height="100" /><br />
-                <table>
-                   <tr><td width="172"><img src="images/star.png" alt="" width="100" height="100" /></td></tr>
-                   <tr><td >文字 文字 文字 文字 文字 文字 文字 </td></tr>               
-               </table>    
+				
             <!-- 第3欄內容結束 -->
         </div>
     </div>
