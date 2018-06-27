@@ -61,19 +61,19 @@ Released   : 20110411
 				try {
 					String JDriver = "net.ucanaccess.jdbc.UcanaccessDriver";							
 					Class.forName(JDriver);
-					String url = "jdbc:ucanaccess://D:/EATPROJECT/eatingProject/WebContent/Food06223.accdb";
+					String url = "jdbc:ucanaccess://D:/EATPROJECT/eatingProject/WebContent/Food06223_test.accdb";
 					con = DriverManager.getConnection(url,"","");
 					Statement stmt = con.createStatement();					
 					ResultSet rs = stmt.executeQuery("SELECT * FROM Category");
 					ResultSet rs_CategoryName = stmt.executeQuery("SELECT * FROM Category where CategoryID='"+request.getParameter("id")+"'");
-					ResultSet rs1= stmt.executeQuery("SELECT distinct * From Restaurant");
+					ResultSet rs1= stmt.executeQuery("SELECT * FROM Restaurant where CategoryID='"+request.getParameter("id")+"'");
 					ResultSet rs2= stmt.executeQuery("SELECT distinct * From Restaurant");
 					
 		%>
 		
 				<ul>
 				<%while (rs.next()) {%>
-					<li><a href="taiwanesefood.jsp?id=<%=rs.getString("CategoryID")%>"><span style="font-size:25px;"><%=rs.getString("CategoryName")%></span></a></li>					
+					<li><a href="taiwanesefood.jsp?id=<%=rs.getString("CategoryID")%>&CategoryID=<%=rs.getString("CategoryID")%>"><span style="font-size:25px;"><%=rs.getString("CategoryName")%></span></a></li>					
 				<%}
 				rs.close();%>
 				</ul>
