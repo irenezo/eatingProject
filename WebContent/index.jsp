@@ -89,9 +89,9 @@ Released   : 20110411
         <div class="column2">
             <!-- 第2欄內容 -->
 
-				<h2 class="title"><img src="images/1.png" width="36" height="30">台北熱門美食餐廳</h2>					
+				<h2 class="title"><img src="images/1.png" width="36" height="30">台北熱門美食餐廳</h2></br>					
 			    
-              <table width="413" height="256" align="center">
+              <table width="800" height="300" align="center">
                      
                <!-- 台北市熱門美食 -->              
                   <tr>
@@ -113,7 +113,7 @@ Released   : 20110411
                   int j=0;                 
                   while (rs2.next() && j<3) {                     
                   %>                  
-		             <td><img src="<%=rs2.getString("Image")%>"></img></td>
+		             <td><img src="<%=rs2.getString("Image")%>"width="140" height="140"></img></td>
 		          <%
                      j=j+1;
                   }
@@ -140,7 +140,7 @@ Released   : 20110411
                   int l=0;                 
                   while (rs2.next() && l<3) {                     
                   %>                  
-		             <td><img src="<%=rs2.getString("Image")%>"></img></td>
+		             <td><img src="<%=rs2.getString("Image")%>"width="140" height="140"></img></td>
 		          <%
                      l=l+1;
                   }
@@ -149,8 +149,8 @@ Released   : 20110411
                   </tr>
               
                 </table>
-                <table width="413" height="256" align="center">
-	            <h2 class="title"><a href="#"><img src="images/1.png" alt="" width="36" height="30" />新北熱門美食餐廳</a></h2>
+                <table width="800" height="300" align="center">
+	            <h2 class="title"><img src="images/1.png" alt="" width="36" height="30" />新北熱門美食餐廳</a></h2>
                  
                  <!-- 新北市熱門美食 -->
                  <tr>
@@ -171,7 +171,7 @@ Released   : 20110411
                   int n=0;                 
                   while (rs2.next() && n<3) {                     
                   %>                  
-		             <td><img scr="<%=rs2.getString("Image")%>"></img></td>
+		             <td><img src="<%=rs2.getString("Image")%>"width="140" height="140"></img></td>
 		          <%
                      n=n+1;
                   }
@@ -198,7 +198,7 @@ Released   : 20110411
                   int p=0;                 
                   while (rs2.next() && p<3) {                     
                   %>                  
-		             <td><img src="<%=rs2.getString("Image")%>"></img></td>
+		             <td><img src="<%=rs2.getString("Image")%>"width="140" height="140"></img></td>
 		          <%
                      p=p+1;
                   }

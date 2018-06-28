@@ -1,4 +1,8 @@
-<%@ page language="Java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<%@page language="java" contentType="text/html;charset=utf-8"
+	pageEncoding="utf-8"%>
+<%@page import="java.sql.*"%>
+<%@page import="java.util.*"%>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -34,7 +38,41 @@
         <div class="column1" style="background-color: #ffffcc;">
             <!-- 第1欄內容 -->
             <div id="information">
-		      <h2>資訊</h2>
+                       <%
+			Connection con = null;
+			{
+
+				try {
+					String JDriver = "net.ucanaccess.jdbc.UcanaccessDriver";							
+					Class.forName(JDriver);
+
+
+					String url = "jdbc:ucanaccess://D:/EATPROJECT/eatingproject/WebContent/Food06223_test.accdb";
+
+
+					con = DriverManager.getConnection(url,"","");
+					Statement stmt = con.createStatement();					
+					ResultSet rs= stmt.executeQuery("SELECT distinct * From Restaurant");		
+
+		%>
+ 
+            
+		      <h2>資訊</h2><ul>
+				<%while (rs.next()) {%>
+					<li><a href="taiwanesefood.jsp?id=<%=rs.getString("RestID")%>"><span style="font-size:25px;"><%=rs.getString("RestName")%></span></a></li>					
+				<%}%>
+				</ul>
+			
+	<%
+		
+					rs.close();
+					%>
+		      <%			con.close();
+				} catch (Exception ex) {
+					ex.printStackTrace();
+				}
+			}
+		%>
 		      <a href="https://www.google.com.tw/maps/@25.0448354,121.5079269,15z"><img src="images/mapIcon.png" width="50" height="50" align="right"/></a>
 		      </br><ul type="circle">
                  <li>營業時間：</li>                
