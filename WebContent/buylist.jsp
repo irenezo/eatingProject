@@ -34,9 +34,9 @@ Released   : 20110411
     
 		<ul>
 			
-        	<li><a href="#">首頁</a></li>
-			<li><a href="#">註冊</a></li>
-			<li><a href="#">登入</a></li>
+        	<li><a href="index.jsp">首頁</a></li>
+			<li><a href="register.jsp">註冊</a></li>
+			<li><a href="login.jsp">登入</a></li>
 		</ul>
         <img src="images/icon2.png" alt="" width="227" height="86" /></div>
 	</div>
@@ -53,16 +53,16 @@ Released   : 20110411
 				</li>
 				<div id="category" align="center"><b>會員管理</b></div><br>
                 <li>
-					<h2 align="center">帳號管理</h2>
+					<h2 align="center"><a href="AccountManagement.jsp">帳號管理</h2>
 				</li>
                 <li>
-					<h2 align="center">建立團購</h2>
+					<h2 align="center"><a href="teambuying.jsp">建立團購</h2>
 				</li>
 				<li>
-					<h2 align="center"><a href="buylist.jsp">團購清單</h2>
+					<h2 align="center" class="active"><a href="buylist.jsp">團購清單</h2>
 				</li>
 				<li>
-					<h2 align="center">問題回報</h2>
+					<h2 align="center"><a href="QA.jsp">問題回報</h2>
 				</li>
 			 </ul>	
 		</div>
@@ -73,7 +73,7 @@ Released   : 20110411
             <!-- 第2欄內容 -->
 
 				<div class="post" style="background-color:#99FF99">
-				<h2 class="title"><a href="#">團購清單</a></h2>
+				<h2 class="title">團購清單</a></h2>
 						
 			  <div class="entry" style="background-color:#FFDDAA">
                <table width="150" height="50">

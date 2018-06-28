@@ -34,7 +34,7 @@ Released   : 20110411
     
 		<ul>
 			
-        	<li><a href="#">首頁</a></li>
+        	<li><a href="index.jsp">首頁</a></li>
 			<li><a href="register.jsp">註冊</a></li>
 			<li><a href="login.jsp">登入</a></li>
 			<li><a href="AccountManagement.jsp">會員管理</a></li>
@@ -56,18 +56,17 @@ Released   : 20110411
 				<div id="category" align="center"><b>會員管理</b></div>
                 <br />
                 <li>
-					<h2 align="center"><a href="AcountMangement.jsp">帳號管理</h2>
+					<h2 align="center" class="active"><a href="AccountManagement.jsp">帳號管理</h2>
 				</li>
                 <li>
-					<h2 align="center">建立團購</h2>
+					<h2 align="center"><a href="teambuying.jsp">建立團購</h2>
 				</li>
 				<li>
-					<h2 align="center">團購清單</h2>
+					<h2 align="center"><a href="buylist.jsp">團購清單</h2>
 				</li>
 				<li>
-					<h2 align="center">問題回報</h2>
+					<h2 align="center"><a href="QA.jsp">問題回報</h2>
 				</li>
-                
 				
 			</ul>	
 		</div>

@@ -23,9 +23,9 @@
     
 		<ul>
 			
-        	<li><a href="#">首頁</a></li>
-			<li><a href="#">註冊</a></li>
-			<li><a href="#">登入</a></li>
+        	<li><a href="index.jsp">首頁</a></li>
+			<li><a href="register.jsp">註冊</a></li>
+			<li><a href="login.jsp">登入</a></li>
 		</ul>
         <img src="images/icon2.png" alt="" width="227" height="86" /></div>
 	</div>
@@ -44,16 +44,16 @@
 				<div id="category" style="font-size:xx-large" align="center" ><b>會員管理</b></div>
                 <br />
                 <li>
-					<h2>帳號管理</h2>
+					<h2 align="center"><a href="AccountManagement.jsp">帳號管理</h2>
 				</li>
                 <li>
-					<h2>建立團購</h2>
+					<h2 align="center"><a href="teambuying.jsp">建立團購</h2>
 				</li>
 				<li>
-					<h2>團購清單</h2>
+					<h2 align="center"><a href="buylist.jsp">團購清單</h2>
 				</li>
 				<li>
-					<h2><a href="QA.jsp">問題回報</a></h2>
+					<h2 align="center" class="active"><a href="QA.jsp">問題回報</h2>
 				</li>
                 
 				
