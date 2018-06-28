@@ -47,19 +47,21 @@
 					Class.forName(JDriver);
 
 
-					String url = "jdbc:ucanaccess://D:/EATPROJECT/eatingproject/WebContent/Food06223_test.accdb";
+					String url = "jdbc:ucanaccess://D:/EATPROJECT/eatingproject/WebContent/Food06223_test2.accdb";
 
 
 					con = DriverManager.getConnection(url,"","");
 					Statement stmt = con.createStatement();					
-					ResultSet rs= stmt.executeQuery("SELECT distinct * From Restaurant");		
-
+					ResultSet rs= stmt.executeQuery("SELECT distinct * from Restaurant");		
+					ResultSet rs1= stmt.executeQuery("SELECT * From Restaurant ");
+					
 		%>
+		
  
             
 		      <h2>資訊</h2><ul>
 				<%while (rs.next()) {%>
-					<li><a href="taiwanesefood.jsp?id=<%=rs.getString("RestID")%>"><span style="font-size:25px;"><%=rs.getString("RestName")%></span></a></li>					
+					<li><a href="#?id=<%=rs.getString("RestID")%>"><span style="font-size:25px;"><%=rs.getString("RestName")%></span></a></li>					
 				<%}%>
 				</ul>
 			
@@ -67,19 +69,17 @@
 		
 					rs.close();
 					%>
-		      <%			con.close();
-				} catch (Exception ex) {
-					ex.printStackTrace();
-				}
-			}
-		%>
+		      
 		      <a href="https://www.google.com.tw/maps/@25.0448354,121.5079269,15z"><img src="images/mapIcon.png" width="50" height="50" align="right"/></a>
 		      </br><ul type="circle">
-                 <li>營業時間：</li>                
-			     <li>地址：</li>
+                 <li>營業時間： 
+                 </li>
+                                                  
+			     <li>地址：
+				 </li>
                  <li>電話：</li>
                  <li>外送服務：</li>                
-                 <li>網站連結</li>
+                 <li>網站連結：</li>
                  <li>備註：</li>
                  <li>其他外送服務 : <a href="#">UBER</a></li>
               </ul>		
@@ -175,6 +175,13 @@
         </div>
     </div>
     </div>
+    <%			con.close();
+				} catch (Exception ex) {
+					ex.printStackTrace();
+				}
+			}
+		%>
+    
       <!-- 內容：三欄式呈現結束 -->
     
     <p align="right"><a href="QA.jsp">問題回報</a></p>

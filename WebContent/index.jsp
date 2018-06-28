@@ -61,7 +61,7 @@ Released   : 20110411
 					Class.forName(JDriver);
 
 
-					String url = "jdbc:ucanaccess://D:/EATPROJECT/eatingproject/WebContent/Food06223_test.accdb";
+					String url = "jdbc:ucanaccess://D:/EATPROJECT/eatingproject/WebContent/Food06223_test2.accdb";
 
 
 					con = DriverManager.getConnection(url,"","");
@@ -95,7 +95,7 @@ Released   : 20110411
                      
                <!-- 台北市熱門美食 -->              
                   <tr>
-                  <%
+                 <%
                   int i=0;                  
                   while (rs1.next() && i<3) {
                   %>
@@ -145,7 +145,8 @@ Released   : 20110411
                      l=l+1;
                   }
                  	                  
-                  %>               
+                  %>              
+                
                   </tr>
               
                 </table>
