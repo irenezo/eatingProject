@@ -61,7 +61,11 @@ Released   : 20110411
 					Class.forName(JDriver);
 
 
+<<<<<<< HEAD
 					String url = "jdbc:ucanaccess://D:/EATPROJECT/eatingproject/WebContent/Food06223_test2.accdb";
+=======
+					String url = "jdbc:ucanaccess://C:/Users/NTUNHS//git/eatingProject/WebContent/Food06223_test.accdb";
+>>>>>>> branch 'master' of https://github.com/irenezo/eatingProject.git
 
 
 					con = DriverManager.getConnection(url,"","");
@@ -83,6 +87,7 @@ Released   : 20110411
 					rs.close();
 					%>
 			</ul>
+			<br><br>
 		    </div>
 		    <!-- 第1欄內容結束 -->
         </div>

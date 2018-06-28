@@ -23,9 +23,9 @@
     
 		<ul>
 			
-        	<li><a href="#">首頁</a></li>
-			<li><a href="#">註冊</a></li>
-			<li><a href="#">登入</a></li>
+        	<li><a href="index.jsp">首頁</a></li>
+			<li><a href="register.jsp">註冊</a></li>
+			<li><a href="login.jsp">登入</a></li>
 		</ul>
         <img src="images/icon2.png" alt="" width="227" height="86" /></div>
 	</div>
@@ -41,19 +41,19 @@
 					
 					<div style="clear: both;" align="center">
 				</li>
-				<div id="category" style="font-size:xx-large" align="center" ba><b>會員管理</b></div>
+				<div id="category" style="font-size:xx-large" align="center" ><b>會員管理</b></div>
                 <br />
                 <li>
-					<h2>帳號管理</h2>
+					<h2 align="center"><a href="AccountManagement.jsp">帳號管理</h2>
 				</li>
                 <li>
-					<h2>建立團購</h2>
+					<h2 align="center"><a href="teambuying.jsp">建立團購</h2>
 				</li>
 				<li>
-					<h2>團購清單</h2>
+					<h2 align="center"><a href="buylist.jsp">團購清單</h2>
 				</li>
 				<li>
-					<h2><a href="QA.jsp">問題回報</a></h2>
+					<h2 align="center" class="active"><a href="QA.jsp">問題回報</h2>
 				</li>
                 
 				
@@ -70,7 +70,7 @@
 			  <div class="entry" style="background-color:#FFDDAA">
                <table width="300" height="200">
              <tr>
-             <form action="QA_process.jpg" method="get">
+             <form action="QA_process.jsp" method="get">
 			 <td><font size="5"> 主旨 </font></td>
 			 <td><input type="text" name="major"> </td>
               </tr>   
@@ -80,7 +80,7 @@
                <td><input type="text" name="content"></td>
                 </tr>
                 </table>
-                <button type="button" onclick="document.getElementById('demo').style.display='block'" style="background-color:lightgreen;">傳送</button>
+                <input type="submit" value="送出">
 </form>
 <p id="demo" style="display:none">感謝你的回報</p>
                 
