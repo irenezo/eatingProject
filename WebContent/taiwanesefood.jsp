@@ -91,7 +91,7 @@ Released   : 20110411
 				<%}%>
 				</h2>
 			
-				<h2>台北市</br> 
+				<h2>台北市 
 				<select id=type name="type" onchange="updateData(this)">
 			      <option value="">請選擇</option>
 			      <option value="1">萬華區</option>
@@ -129,7 +129,7 @@ Released   : 20110411
                   int j=0;                 
                   while (rs2.next() && j<3) {                     
                   %>                  
-		             <td><img src="<%=rs2.getString("Image")%>"width="140" height="140"></img></td>
+		             <td><a href="order.jsp"><img src="<%=rs2.getString("Image")%>" alt="order.jsp" width="140" height="140"></img></a></td>
 		          <%
                      j=j+1;
                   }
@@ -155,7 +155,7 @@ Released   : 20110411
                   int l=0;                 
                   while (rs2.next() && l<3) {                     
                   %>                  
-		             <td><img src="<%=rs2.getString("Image")%>"width="140" height="140"></img></td>
+		             <td><a href="order.jsp"><img src="<%=rs2.getString("Image")%>" alt="order.jsp" width="140" height="140"></img></a></td>
 		          <%
                      l=l+1;
                   }

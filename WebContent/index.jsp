@@ -61,11 +61,8 @@ Released   : 20110411
 					Class.forName(JDriver);
 
 
-<<<<<<< HEAD
 					String url = "jdbc:ucanaccess://D:/EATPROJECT/eatingproject/WebContent/Food06223_test2.accdb";
-=======
-					String url = "jdbc:ucanaccess://C:/Users/NTUNHS//git/eatingProject/WebContent/Food06223_test.accdb";
->>>>>>> branch 'master' of https://github.com/irenezo/eatingProject.git
+
 
 
 					con = DriverManager.getConnection(url,"","");
@@ -96,7 +93,7 @@ Released   : 20110411
 
 				<h2 class="title"><img src="images/1.png" width="36" height="30">台北熱門美食餐廳</h2></br>					
 			    
-              <table width="800" height="300" align="center">
+              <table>
                      
                <!-- 台北市熱門美食 -->              
                   <tr>
@@ -118,7 +115,7 @@ Released   : 20110411
                   int j=0;                 
                   while (rs2.next() && j<3) {                     
                   %>                  
-		             <td><img src="<%=rs2.getString("Image")%>"width="140" height="140"></img></td>
+		             <td><a href="order.jsp"><img src="<%=rs2.getString("Image")%>" alt="order.jsp" width="140" height="140"></img></a></td>
 		          <%
                      j=j+1;
                   }
@@ -145,7 +142,7 @@ Released   : 20110411
                   int l=0;                 
                   while (rs2.next() && l<3) {                     
                   %>                  
-		             <td><img src="<%=rs2.getString("Image")%>"width="140" height="140"></img></td>
+		             <td><a href="order.jsp"><img src="<%=rs2.getString("Image")%>" alt="order.jsp" width="140" height="140"></img></a></td>
 		          <%
                      l=l+1;
                   }
@@ -155,8 +152,10 @@ Released   : 20110411
                   </tr>
               
                 </table>
-                <table width="800" height="300" align="center">
-	            <h2 class="title"><img src="images/1.png" alt="" width="36" height="30" />新北熱門美食餐廳</a></h2>
+                
+	            <h2 class="title"><img src="images/1.png" alt="" width="36" height="30" />新北熱門美食餐廳</a></h2></br>
+	            
+	            <table>
                  
                  <!-- 新北市熱門美食 -->
                  <tr>

@@ -28,7 +28,8 @@
 	  <ul>			
         	<li><a href="index.jsp">首頁</a></li>
 			<li><a href="#">註冊</a></li>
-			<li><a href="logout_process.jsp">登出</a></li>
+			<li><a href="login.jsp">登入</a></li>
+			<li><a href="mailto:jackson09@live.hk">聯絡我們</a></li>
 	  </ul>
       <a href="index.jsp"><img src="images/icon2.png" alt="index.jsp" width="235" height="84" /></a>
     </div>
@@ -38,50 +39,24 @@
         <div class="column1" style="background-color: #ffffcc;">
             <!-- 第1欄內容 -->
             <div id="information">
-                       <%
-			Connection con = null;
-			{
-
-				try {
-					String JDriver = "net.ucanaccess.jdbc.UcanaccessDriver";							
-					Class.forName(JDriver);
-
-
-					String url = "jdbc:ucanaccess://D:/EATPROJECT/eatingproject/WebContent/Food06223_test2.accdb";
-
-
-					con = DriverManager.getConnection(url,"","");
-					Statement stmt = con.createStatement();					
-					ResultSet rs= stmt.executeQuery("SELECT distinct * from Restaurant");		
-					ResultSet rs1= stmt.executeQuery("SELECT * From Restaurant ");
-					
-		%>
 		
  
             
-		      <h2>資訊</h2><ul>
-				<%while (rs.next()) {%>
-					<li><a href="#?id=<%=rs.getString("RestID")%>"><span style="font-size:25px;"><%=rs.getString("RestName")%></span></a></li>					
-				<%}%>
-				</ul>
-			
-	<%
-		
-					rs.close();
-					%>
-		      
+		      <h2>資訊</h2>
+		      <li>何家大碗公涼麵</li>
+
 		      <a href="https://www.google.com.tw/maps/@25.0448354,121.5079269,15z"><img src="images/mapIcon.png" width="50" height="50" align="right"/></a>
 		      </br><ul type="circle">
-                 <li>營業時間： 
-                 </li>
-                                                  
-			     <li>地址：
-				 </li>
-                 <li>電話：</li>
-                 <li>外送服務：</li>                
-                 <li>網站連結：</li>
-                 <li>備註：</li>
-                 <li>其他外送服務 : <a href="#">UBER</a></li>
+
+                 <li>營業時間：0600-2000</li></br>                                
+			     <li>地址：臺北市中正區青島東路21之9號</li></br> 
+                 <li>電話：(02)2922-2222</li></br> 
+                 <li>外送服務：無</li></br>              
+                 <li>網站連結：https://zh-tw.facebook.com/goodfate.tw/</li></br> 
+                 <li>備註：無</li></br> 
+                 <li>其他外送服務 : <a href="#">UBER</a></li></br> 
+
+                  	
               </ul>		
 		    </div>
 		    <!-- 第1欄內容結束 -->
@@ -93,9 +68,8 @@
 			  
                    <table width="413" height="256">
                      <tr>
-                        <td>圖片</td>
-               	        <td>文字</td>
-                        <td>$價錢</td>
+               	        <td>養生綠藻涼麵</td>
+                        <td>$55</td>
                         <td>X</td>
                         <!-- 計算數量的按鈕 -->
                         <td><input type="text" value="1" id="text"></id>
@@ -123,32 +97,22 @@
                         </script>              
                      </tr>
                      <tr>
-			            <td>圖片</td>
-               	        <td>文字</td>
-                        <td>$價錢</td>
+               	        <td>單點-金針菇</td>
+                        <td>$30</td>
                         <td>X</td>
                         <td><input type="text" value="1" id="text"></id>
                         <input type="button" id="bt1" value="+1"/>
                         <input type="button" id="bt2" value="-1"/></td>               
                      </tr>
                      <tr>
-			            <td>圖片</td>
-               	        <td>文字</td>
-                        <td>$價錢</td>
+               	        <td>肉燥麵</td>
+                        <td>$55</td>
                         <td>X</td>
                         <td><input type="text" value="1" id="text"></id>
                         <input type="button" id="bt1" value="+1"/>
                         <input type="button" id="bt2" value="-1"/></td>	               
                       </tr>
-                     <tr>
-			            <td>圖片</td>
-               	        <td>文字</td>
-                        <td>$價錢</td>
-                        <td>X</td>
-                        <td><input type="text" value="1" id="text"></id>
-                        <input type="button" id="bt1" value="+1"/>
-                        <input type="button" id="bt2" value="-1"/></td>	               
-                     </tr>
+
                    </table>      
 
 	     </div>
@@ -158,16 +122,17 @@
         <div class="column3" style="background-color:#ffffcc;">
             <!-- 第3欄內容 -->
             	<div style="clear: both;" align="center">             
-				<h2><b>加入我的最愛</b><br/></h2>
-                <img src="images/star.png" alt="" width="100" height="100" /><br />
 				<table style="border: 5px double rgb(109, 2, 107); height: 300px; background-color: rgb(255, 255, 255); width: 150px;" align="center" cellpadding="5" cellspacing="10" frame="border" rules="all">
     			<br></br><caption><h3>你點了什麼呢?</h3></caption>
    				<tbody>
      			<tr>
-      			<td>XX套餐</td>
+      			<td>
+      			</br>
+      			</td>
       			</tr>
       			<tr>
-      			<td>總計</td>
+      			<td>總計</br>
+      			</td>
       			</tr>
    				</tbody>
  				</table>        
@@ -175,12 +140,7 @@
         </div>
     </div>
     </div>
-    <%			con.close();
-				} catch (Exception ex) {
-					ex.printStackTrace();
-				}
-			}
-		%>
+
     
       <!-- 內容：三欄式呈現結束 -->
     
