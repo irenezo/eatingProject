@@ -61,7 +61,7 @@ Released   : 20110411
 					Class.forName(JDriver);
 
 
-					String url = "jdbc:ucanaccess://D:/EATPROJECT/eatingproject/WebContent/Food06223_test.accdb";
+					String url = "jdbc:ucanaccess://C:/Users/NTUNHS//git/eatingProject/WebContent/Food06223_test.accdb";
 
 
 					con = DriverManager.getConnection(url,"","");
@@ -83,6 +83,7 @@ Released   : 20110411
 					rs.close();
 					%>
 			</ul>
+			<br><br>
 		    </div>
 		    <!-- 第1欄內容結束 -->
         </div>

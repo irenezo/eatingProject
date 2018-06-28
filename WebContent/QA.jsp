@@ -41,7 +41,7 @@
 					
 					<div style="clear: both;" align="center">
 				</li>
-				<div id="category" style="font-size:xx-large" align="center" ba><b>會員管理</b></div>
+				<div id="category" style="font-size:xx-large" align="center" ><b>會員管理</b></div>
                 <br />
                 <li>
 					<h2>帳號管理</h2>
@@ -70,7 +70,7 @@
 			  <div class="entry" style="background-color:#FFDDAA">
                <table width="300" height="200">
              <tr>
-             <form action="QA_process.jpg" method="get">
+             <form action="QA_process.jsp" method="get">
 			 <td><font size="5"> 主旨 </font></td>
 			 <td><input type="text" name="major"> </td>
               </tr>   
@@ -80,7 +80,7 @@
                <td><input type="text" name="content"></td>
                 </tr>
                 </table>
-                <button type="button" onclick="document.getElementById('demo').style.display='block'" style="background-color:lightgreen;">傳送</button>
+                <input type="submit" value="送出">
 </form>
 <p id="demo" style="display:none">感謝你的回報</p>
                 

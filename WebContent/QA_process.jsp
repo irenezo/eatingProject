@@ -17,10 +17,10 @@
 				try {
 					String JDriver = "net.ucanaccess.jdbc.UcanaccessDriver";							
 					Class.forName(JDriver);
-					String url = "jdbc:ucanaccess://D:/eatingProject/WebContent/Food0601.mdb";
+					String url = "jdbc:ucanaccess://C:/Users/NTUNHS//git/eatingProject/WebContent/Food06223_test.accdb";
 					con = DriverManager.getConnection(url,"","");
 					Statement stmt = con.createStatement();
-					stmt.executeUpdate("INSERT INTO ?(major,content) VALUES ('"+major+"', '"+content+"')");
+					stmt.executeUpdate("INSERT INTO QA(major,content) VALUES ('"+major+"', '"+content+"')");
 					
 					stmt.close();
 					con.close();
@@ -29,7 +29,7 @@
 				}
 			}
 			
-			 response.sendRedirect("?UserName="+UserName);
+			 response.sendRedirect("index.jsp?");
 
 		
 		%>
