@@ -60,10 +60,9 @@ Released   : 20110411
 					String JDriver = "net.ucanaccess.jdbc.UcanaccessDriver";							
 					Class.forName(JDriver);
 
+					String url = "jdbc:ucanaccess://D:/EATPROJECT/eatingproject/WebContent/Food06223_test3.accdb";
 
-					String url = "jdbc:ucanaccess://D:/EATPROJECT/eatingproject/WebContent/Food06223_test2.accdb";
-
-
+				
 
 					con = DriverManager.getConnection(url,"","");
 					Statement stmt = con.createStatement();					
@@ -152,7 +151,7 @@ Released   : 20110411
                   </tr>
               
                 </table>
-                
+
 	            <h2 class="title"><img src="images/1.png" alt="" width="36" height="30" />新北熱門美食餐廳</a></h2></br>
 	            
 	            <table>
@@ -223,17 +222,7 @@ Released   : 20110411
 					<h2><b>想不到今天吃什麼嗎?</b><br/></h2><br/>
                 <a href="random.jsp"><img src="images/circle.png" alt="" width="150" height="150" /></a><br />
               
-                			<table style="border: 5px double rgb(109, 2, 107); height: 300px; background-color: rgb(255, 255, 255); width: 150px;" align="center" cellpadding="5" cellspacing="10" frame="border" rules="all">
-    			<br></br><caption><h3>輕食區</h3></caption>
-   				<tbody>
-     			<tr>
-      			<td>XX套餐</td>
-      			</tr>
-      			<tr>
-      			<td>總計</td>
-      			</tr>
-   				</tbody>
- 				</table>            
+                			 
             <!-- 第3欄內容結束 -->
         </div>
     </div>
