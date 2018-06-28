@@ -135,7 +135,7 @@
 				</div>
 
 <br><br>
-<input type="submit" value="帶你去吃好吃的囉～">
+<a href="index.jsp"><input type="submit" value="帶你去吃好吃的囉～"></a>
 
  			</form>
                   

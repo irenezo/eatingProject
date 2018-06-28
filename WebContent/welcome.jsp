@@ -52,6 +52,8 @@ session.setAttribute("UserName",request.getParameter("UserName"));
 
 out.println("您好，已完成註冊，三秒後返回首頁～");
 		%>
+                 
+		
                   
 					
 			  </div>
