@@ -27,7 +27,7 @@
     
 	  <ul>			
         	<li><a href="index.jsp">首頁</a></li>
-			<li><a href="#">註冊</a></li>
+			<li><a href="register.jsp">註冊</a></li>
 			<li><a href="logout_process.jsp">登出</a></li>
 	  </ul>
       <a href="index.jsp"><img src="images/icon2.png" alt="index.jsp" width="235" height="84" /></a>
@@ -90,15 +90,14 @@
             <!-- 第2欄內容 -->
 
 				<h2 class="menutitle">菜單</h2>						
-			  
+			 
                    <table width="413" height="256">
                      <tr>
-                        <td>圖片</td>
-               	        <td>文字</td>
+                        <td>文字</td>
                         <td>$價錢</td>
                         <td>X</td>
                         <!-- 計算數量的按鈕 -->
-                        <td><input type="text" value="1" id="text"></id>
+                        <td><input type="text" value="1" id="text" ></id>
                         <input type="button" id="bt1" value="+1"/>
                         <input type="button" id="bt2" value="-1"/></td>
                         <script>
@@ -123,16 +122,14 @@
                         </script>              
                      </tr>
                      <tr>
-			            <td>圖片</td>
-               	        <td>文字</td>
+ 	         	        <td>文字</td>
                         <td>$價錢</td>
                         <td>X</td>
                         <td><input type="text" value="1" id="text"></id>
                         <input type="button" id="bt1" value="+1"/>
                         <input type="button" id="bt2" value="-1"/></td>               
                      </tr>
-                     <tr>
-			            <td>圖片</td>
+                     <tr>			            
                	        <td>文字</td>
                         <td>$價錢</td>
                         <td>X</td>
@@ -140,8 +137,7 @@
                         <input type="button" id="bt1" value="+1"/>
                         <input type="button" id="bt2" value="-1"/></td>	               
                       </tr>
-                     <tr>
-			            <td>圖片</td>
+                     <tr>			           
                	        <td>文字</td>
                         <td>$價錢</td>
                         <td>X</td>
@@ -150,7 +146,8 @@
                         <input type="button" id="bt2" value="-1"/></td>	               
                      </tr>
                    </table>      
-
+                     <input type="submit"  value="確定" align="right" style="background-color:lightgreen;">
+</form>
 	     </div>
 
             <!-- 第2欄內容結束 -->
@@ -162,14 +159,16 @@
                 <img src="images/star.png" alt="" width="100" height="100" /><br />
 				<table style="border: 5px double rgb(109, 2, 107); height: 300px; background-color: rgb(255, 255, 255); width: 150px;" align="center" cellpadding="5" cellspacing="10" frame="border" rules="all">
     			<br></br><caption><h3>你點了什麼呢?</h3></caption>
-   				<tbody>
+    			
+    			
+   				
      			<tr>
-      			<td>XX套餐</td>
+      			<td></td>
       			</tr>
       			<tr>
       			<td>總計</td>
       			</tr>
-   				</tbody>
+   				
  				</table>        
             <!-- 第3欄內容結束 -->
         </div>

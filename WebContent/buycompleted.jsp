@@ -17,7 +17,7 @@ Released   : 20110411
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>Greenorange by TEMPLATED</title>
+<title>團購資料確認</title>
 <link href="css/style.css" rel="stylesheet" type="text/css" media="screen" />
 </head>
 <body>
@@ -34,9 +34,9 @@ Released   : 20110411
     
 		<ul>
 			
-        	<li><a href="#">首頁</a></li>
-			<li><a href="#">註冊</a></li>
-			<li><a href="#">登入</a></li>
+        	<li><a href="index.jsp">首頁</a></li>
+			<li><a href="register.jsp">註冊</a></li>
+			<li><a href="login.jsp">登入</a></li>
 		</ul>
         <img src="images/icon2.png" alt="" width="227" height="86" /></div>
 	</div>
@@ -52,17 +52,15 @@ Released   : 20110411
 					<div style="clear: both;" align="center">
 				</li>
 				<div id="category" align="center"><b>會員管理</b></div><br>
+                
                 <li>
-					<h2 align="center">帳號管理</h2>
-				</li>
-                <li>
-					<h2 align="center"><a href="buycompleted.jsp">建立團購</h2>
+					<h2 align="center"><a href="teambuying.jsp">建立團購</h2>
 				</li>
 				<li>
-					<h2 align="center">團購清單</h2>
+					<h2 align="center"><a href="buycompleted.jsp">團購清單</h2>
 				</li>
 				<li>
-					<h2 align="center">問題回報</h2>
+					<h2 align="center"><a href="QA.jsp">問題回報</h2>
 				</li>
 			 </ul>	
 		</div>
@@ -82,35 +80,33 @@ Released   : 20110411
    String county=request.getParameter("county");
    String area=request.getParameter("area");
    String category=request.getParameter("category");
-   String restname=request.getParameter("restname"); 
+   String restaurant=request.getParameter("restaurant"); 
    String month=request.getParameter("month");
    String day=request.getParameter("day");
    String time=request.getParameter("time");
    %>
-			  
+			    <form action="order.jsp">
                <table width="300" height="280">
+                 
                  <tr>
-			       <td>團購單號：<label ><%out.println(name);%></label></td>               
-                 </tr>
-                 <tr>
-			       <td>團長名稱：<label ><%out.println(name);%></label></td>               
+			       <td>團長名稱：<label name="name"><%out.println(name);%></label></td>               
                  </tr>
 				 <tr>
-			       <td>地區：<label><%out.println(county);%><%out.println(area);%></label></td>
+			       <td>地區：<label name="county"><%out.println(county);%></label><label name="area"><%out.println(area);%></label></td>
 			     </tr>
                  <tr>
-			       <td>分類：<label ><%out.println(category);%></label></td>
+			       <td>分類：<label name="category"><%out.println(category);%></label></td>
                  </tr>
                  <tr>
-			       <td>餐廳名稱：<label ><%out.println(restname);%></label></td>
+			       <td>餐廳名稱：<label name="restaurant"><%out.println(restaurant);%></label></td>
                  </tr>
                  <tr>
-			       <td>建立日期：<label ><%out.println(month);%><%out.println(day);%><%out.println(time);%></label></td>
+			       <td>建立日期：<label name="day"><%out.println(month);%></label><label name="day"><%out.println(day);%></label><label name="time"><%out.println(time);%></label></td>
                  </tr>
                 </table>
                 
-                <input type="submit"  value="建立" style="background-color:lightgreen;">
-               
+                <input type="submit"  value="確定" style="background-color:lightgreen;">
+                 </form>
                 </div>
 </div>
             <!-- 第2欄內容結束 -->
@@ -124,47 +120,7 @@ Released   : 20110411
     </div>
     </div>
 
-			<table border="1" align="center">
-　				<tr>
-					<td colspan="8" style="background-color:#FF9D40">已建立的團購紀錄</td>
-				</tr>
-　				<tr style="background-color:#FFDDAA" align="center">
-　					<td>團長單號</td>
-　					<td>團長名稱</td>
- 					<td>地區</td>
-			 		<td>分類</td>
- 					<td>餐廳名稱</td>
-		 			<td>截止時間</td>
- 					<td>建立時間</td>
-　				</tr>
- 　				<tr style="background-color:#FFDDAA" align="center">
-		 			<td>123456</td>
- 					<td>王小明</td>
- 					<td>台北市萬華區</td>
- 					<td>臺式料理</td>
- 					<td>XXXX</td>
- 					<td>2018/06/01 08:00</td>
- 					<td>2018/06/01 08:00</td>
- 				</tr>
-  　				<tr style="background-color:#FFDDAA" align="center">
- 					<td>123456</td>
- 					<td>王小明</td>
- 					<td>台北市中山區</td>
- 					<td>中式料理</td>
- 					<td>XXXX</td>
- 					<td>2018/06/02 08:00</td>
- 					<td>2018/06/02 08:00</td>
- 				</tr>
- 				<tr style="background-color:#FFDDAA" align="center">
- 					<td>123456</td>
- 					<td>王小明</td>
- 					<td>台北市信義區</td>
- 					<td>下午茶</td>
- 					<td>XXXX</td>
- 					<td>2018/06/03 08:00</td>
- 					<td>2018/06/03 08:00</td>
- 				</tr>
-			</table>
+			
 
     <!-- 內容：三欄式呈現結束 -->
 	<div id="footer">

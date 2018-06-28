@@ -43,9 +43,7 @@
 				</li>
 				<div id="category" style="font-size:xx-large" align="center" ><b>會員管理</b></div>
                 <br />
-                <li>
-					<h2 align="center"><a href="AccountManagement.jsp">帳號管理</h2>
-				</li>
+               
                 <li>
 					<h2 align="center"><a href="teambuying.jsp">建立團購</h2>
 				</li>
@@ -80,7 +78,7 @@
                <td><input type="text" name="content"></td>
                 </tr>
                 </table>
-                <input type="submit" value="送出">
+              <input type="submit"  value="確定" style="background-color:lightgreen;">
 </form>
 <p id="demo" style="display:none">感謝你的回報</p>
                 

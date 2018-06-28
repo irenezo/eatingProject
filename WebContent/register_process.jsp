@@ -18,7 +18,7 @@
 		try {
 			String JDriver = "net.ucanaccess.jdbc.UcanaccessDriver";							
 			Class.forName(JDriver);
-			String url = "jdbc:ucanaccess://C:/Users/NTUNHS/git/eatingProject/WebContent/Food06223.accdb";
+			String url = "jdbc:ucanaccess://D:/EATPROJECT/eatingproject/WebContent/Food06223_test2.accdb";
 			con = DriverManager.getConnection(url,"","");
 			Statement stmt = con.createStatement();
 			stmt.executeUpdate("INSERT INTO MemberData(MemberID,Password,UserName,Email) VALUES ('"+MemberID+"', '"+Password+"', '"+UserName+"', '"+Email+"')");

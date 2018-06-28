@@ -56,8 +56,8 @@
 E-mail：<input type="email" name="Email" required>XXX@XXX<br><br>
 
 <br><br>
-<input type="submit" value="送出">
-<input type="reset" value="重填">
+<input type="submit" value="送出" style="background-color:lightgreen;">
+<input type="reset" value="重填" style="background-color:lightgreen;">
  			</form>
                   
 					

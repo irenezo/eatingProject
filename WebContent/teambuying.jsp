@@ -1,4 +1,7 @@
-<%@ page language="Java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<%@page language="java" contentType="text/html;charset=utf-8"
+	pageEncoding="utf-8"%>
+<%@page import="java.sql.*"%>
+<%@page import="java.util.*"%>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <!--
@@ -17,7 +20,7 @@ Released   : 20110411
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>Greenorange by TEMPLATED</title>
+<title>建立團購</title>
 <link href="css/style.css" rel="stylesheet" type="text/css" media="screen" />
 </head>
 <body>
@@ -52,9 +55,7 @@ Released   : 20110411
 					<div style="clear: both;" align="center">
 				</li>
 				<div id="category" align="center"><b>會員管理</b></div><br>
-                <li>
-					<h2 align="center">帳號管理</h2>
-				</li>
+               
                 <li>
 					<h2 align="center"><a href="teambuying.jsp">建立團購</h2>
 				</li>
@@ -106,30 +107,51 @@ Released   : 20110411
 						</td>	
                  </tr> 
                  <tr>
-                   <td>分類：
-                   		<select name="category">
-  						<option value="台式料理">台式料理</option>
- 						<option value="西式料理">西式料理</option>
- 						<option value="日式料理">日式料理</option>
- 						<option value="韓式料理">韓式料理</option>
- 						<option value="美式料理">美式料理</option>
- 						<option value="義式料理">義式料理</option>
- 						<option value="港式料理">港式料理</option>
- 						<option value="早午餐">早午餐</option>
- 						<option value="火鍋類">火鍋類</option>
- 						<option value="餐盒訂購">餐盒訂購</option>
- 						<option value="其他">其他</option>
-						</select>
-                   </td>
-                 </tr>
-                 <tr> 
-				   <td>餐廳名稱：
-                   		<select name="restname">
-  						<option value="XXXX">XXXX</option>
- 						<option value="麥當勞">麥當勞</option>
- 						<option value="肯德基">肯德基</option>
-						</select>
-					</td>
+                
+			<td>分類:
+			<select id="category-list" name="category" onchange="changeCollege(this.selectedIndex)"></select>
+			<br>
+            <br>
+            
+			<select id="restaurant-list" name="restaurant"></select>
+		
+		
+		<script type="text/javascript">
+			var colleges=['台式料理','西式料理','日式料理','韓式料理','美式料理','義式料理','港式料理','早午餐','火鍋類','餐盒訂購','其他','輕食區'];
+			var collegeSelect=document.getElementById("category-list");
+			var inner="";
+			for(var i=0;i<colleges.length;i++){
+				inner=inner+'<option>'+colleges[i]+'</option>';
+			}
+			collegeSelect.innerHTML=inner;
+			
+			
+			var sectors=new Array();
+			sectors[0]=['何家大碗公涼麵 ',' 梅滿美食' ,'一甲子餐飲 - 祖師廟焢肉飯、刈包' ,'施福建好吃雞肉' ,'牛店' ,'嘉味仙麻油雞腿庫飯 ','罵子蛋' ,'噴汁炸雞' ,'唯豐魯肉飯' ,'小天使麵飯館' ,'國光牛丼便當' ,'e園排骨' ,'賽門鄧普拉' ,'總裁牛肉麵'];
+			sectors[1]=['牛B牛排屋 ','師傅的店','AN58西班牙創意料理 承德店','I Met You Cafe'];	
+			sectors[2]=['猴子咖哩 Saru Curry','一方拉麵'];	
+			sectors[3]=['coming soon---'];
+			sectors[4]=['包包南京快饗店']
+			sectors[5]=['RoseMary螺絲瑪莉義麵坊','Tapas Bar 西班牙風味小館 ','So Free Pizza柴燒窯烤 西門店 ','Gusto Pizza'];
+			sectors[6]=['香港仔茶水舖'];
+			sectors[7]=['山文治 ','金花碳烤吐司專賣 '];
+			sectors[8]=['這一小鍋(松山店) ','小樂沙茶火鍋','晨櫻廚房 小火鍋 ‧ 壽喜燒 ','鑫鱻涮涮鍋 ','來一鍋 ','小鍋仔平價小火鍋','熱呼呼平價小火鍋','梁季港式小火鍋','鍋賣局百元小火鍋-板橋忠孝店'];
+			sectors[9]=['coming soon---'];
+			sectors[10]=['coming soon---'];
+			sectors[11]=['吉恩日輕食。咖啡 ','三個傻瓜印度蔬食餐廳 ','單眼皮雙眼皮早餐 ','香洋1972 咖啡輕食屋','URBAN SELECT 城嚴選 ','Jumane Cafe’ 佐曼咖啡館 ','無縫輕食cafe','Petit Tuz 小兔子鄉村輕食雜貨鋪','王樣輕食廚房','Ivy輕食厨房'];
+					
+			function changeCollege(index){
+				var Sinner="";
+				for(var i=0;i<sectors[index].length;i++){
+					Sinner=Sinner+'<option>'+sectors[index][i]+'</option>';
+				}
+				var sectorSelect=document.getElementById("restaurant-list");
+				sectorSelect.innerHTML=Sinner;
+			}
+			changeCollege(document.getElementById("category-list").selectedIndex);
+		</script>
+		</td>
+		</tr>
 				<tr> 
 					<td>截止時間：  
   <br>
