@@ -129,7 +129,7 @@ Released   : 20110411
                   int j=0;                 
                   while (rs2.next() && j<3) {                     
                   %>                  
-		             <td><img scr="<%=rs2.getString("Image")%>"></img></td>
+		             <td><img src="<%=rs2.getString("Image")%>"></img></td>
 		          <%
                      j=j+1;
                   }
@@ -155,7 +155,7 @@ Released   : 20110411
                   int l=0;                 
                   while (rs2.next() && l<3) {                     
                   %>                  
-		             <td><img scr="<%=rs2.getString("Image")%>"></img></td>
+		             <td><img src="<%=rs2.getString("Image")%>"></img></td>
 		          <%
                      l=l+1;
                   }
@@ -219,7 +219,7 @@ Released   : 20110411
                   int n=0;                 
                   while (rs2.next() && n<3) {                     
                   %>                  
-		             <td><%=rs2.getString("RestName")%></td>
+		             <td><img src="<%=rs2.getString("Image")%>"></img></td>
 		          <%
                      n=n+1;
                   }
@@ -246,7 +246,7 @@ Released   : 20110411
                   int p=0;                 
                   while (rs2.next() && p<3) {                     
                   %>                  
-		             <td><%=rs2.getString("RestName")%></td>
+		             <td><img src="<%=rs2.getString("Image")%>"></img></td>
 		          <%
                      p=p+1;
                   }
