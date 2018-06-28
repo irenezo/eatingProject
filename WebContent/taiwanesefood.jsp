@@ -67,7 +67,7 @@ Released   : 20110411
 					ResultSet rs = stmt.executeQuery("SELECT * FROM Category");
 					ResultSet rs_CategoryName = stmt.executeQuery("SELECT * FROM Category where CategoryID='"+request.getParameter("id")+"'");
 					ResultSet rs1= stmt.executeQuery("SELECT * FROM Restaurant where CategoryID='"+request.getParameter("id")+"'");
-					ResultSet rs2= stmt.executeQuery("SELECT distinct * From Restaurant");
+					ResultSet rs2= stmt.executeQuery("SELECT * FROM Restaurant where CategoryID='"+request.getParameter("id")+"'");
 					
 		%>
 		
@@ -129,7 +129,7 @@ Released   : 20110411
                   int j=0;                 
                   while (rs2.next() && j<3) {                     
                   %>                  
-		             <td><%=rs2.getString("RestName")%></td>
+		             <td><img scr="<%=rs2.getString("Image")%>"></img></td>
 		          <%
                      j=j+1;
                   }
@@ -155,7 +155,7 @@ Released   : 20110411
                   int l=0;                 
                   while (rs2.next() && l<3) {                     
                   %>                  
-		             <td><%=rs2.getString("RestName")%></td>
+		             <td><img scr="<%=rs2.getString("Image")%>"></img></td>
 		          <%
                      l=l+1;
                   }
